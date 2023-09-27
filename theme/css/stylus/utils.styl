@@ -1,0 +1,18 @@
+gridsystem-width(_columns = columns)
+  (column-width + gutter-width) * _columns
+
+column(x, _columns = columns)
+  display: inline
+  float: left
+  width: total-width * ((((gutter-width + column-width) * x) - gutter-width) / gridsystem-width(_columns))
+  margin: 0 total-width * ((gutter-width * .5) / gridsystem-width(_columns))
+
+// http://codepen.io/shshaw/full/gEiDt
+absolute-center(width, height = width)
+  width: width
+  height: height
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: width * -0.5
+  margin-left: height * -0.5

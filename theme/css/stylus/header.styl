@@ -1,0 +1,52 @@
+#header
+  @extend $block
+  background: white
+  position: relative
+  a, a:visited
+    white-space: nowrap
+    transition: 0.2s ease
+    color: color-default
+  a:hover
+    color: color-link
+
+$header-block
+  height: logo-size
+  line-height: logo-size
+  padding: ((header-height - logo-size)/2) 15px
+
+$header-block-left
+  float: left
+
+.header-inner
+  height: 100%
+  position: relative
+  #logo
+    @extend $header-block
+    @extend $header-block-left
+    display: inline-block
+    .site-title
+      font-size: 16px
+      display: inline-block
+      vertical-align: top
+      font-weight: 600
+
+#header-title
+  text-align: center
+  height: logo-size
+  position: absolute
+  top: 50%
+  left: 0
+  margin-top: logo-size * -0.5
+
+#main-nav
+  @extend $header-block
+  @extend $header-block-left
+
+$nav-link
+  float: left
+  display: block
+  padding: 0 15px
+
+.main-nav-link
+  @extend $nav-link
+  font-weight: 300
