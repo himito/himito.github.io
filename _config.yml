@@ -10,3 +10,8 @@ url: "/"
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
+
+# information
+position: CNRS Research Engineer
+telephone: +33 01 49 40 40 67
+website: www.jaime-arias.fr

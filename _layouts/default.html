@@ -25,6 +25,9 @@
 
   <!-- Theme CSS -->
   <link id="theme-style" rel="stylesheet" href="{{ "assets/css/shine.css" | relative_url }}">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
 </head>
 
 
@@ -34,35 +37,19 @@
 
       <div class="main-content-wrapper">
         <div class="container-fluid">
+          <!-- top bar -->
           {% include topbar.html %}
 
           <div class="resume-wrapper mx-auto rounded-2">
-            <div class="resume-header px-4 px-lg-5">
-              <div class="resume-profile-holder text-center">
-                <img class="resume-profile-pic rounded-circle" src="{{ "assets/images/profile.jpg" | relative_url }}" alt="image">
-
-                <h2 class="resume-name text-uppercase">Daniel Lopez </h2>
-                <div class="resume-role-title text-uppercase">Senior App Developer</div>
-                <div class="resume-contact mt-4">
-                  <ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
-                    <li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> +123-4567890</li>
-                    <li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> hello@yourwebsite.com</li>
-                    <li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> www.yourwebsite.com</li>
-                  </ul>
-                </div><!--//resume-contact-->
-              </div><!--//profile-holder-->
-            </div><!--//resume-header-->
+            <!-- header -->
+            {% include header.html %}
 
             <div class="resume-body p-4 p-lg-5">
               <div class="row">
                 <div class="col-main col-12 col-lg-8 pe-lg-4">
-                  <section class="resume-summary-section resume-section">
-                    <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
-                    <div class="resume-summary-desc">
-                      Summarise your career profile here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </div>
-                  </section><!--//resume-section-->
 
+                  <!-- summary -->
+                  {% include resume.html %}
                   <hr>
 
                   <section class="resume-experience-section resume-section">

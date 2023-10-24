@@ -1,0 +1,31 @@
+<div class="resume-header px-4 px-lg-5">
+  <div class="resume-profile-holder text-center">
+    <!-- photo -->
+    <img class="resume-profile-pic rounded-circle"
+    src="{{"assets/images/profile.jpg" | relative_url }}" alt="image">
+
+    <h2 class="resume-name text-uppercase">{{ site.title }}</h2>
+    <div class="resume-role-title text-uppercase">{{ site.position }}</div>
+    <div class="resume-contact mt-4">
+      <ul
+        class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between"
+      >
+        <li class="list-inline-item me-md-3 me-lg-5">
+          <i class="resume-contact-icon bi bi-telephone-inbound me-2"></i>
+          {{ site.telephone }}
+        </li>
+        <li class="list-inline-item me-md-3 me-lg-5">
+          <i class="resume-contact-icon bi bi-envelope me-2"></i>
+          {{ site.email }}
+        </li>
+        <li class="list-inline-item me-lg-5">
+          <i class="resume-contact-icon bi bi-globe me-2"></i>
+          {{ site.website }}
+        </li>
+      </ul>
+    </div>
+    <!--//resume-contact-->
+  </div>
+  <!--//profile-holder-->
+</div>
+<!--//resume-header-->
