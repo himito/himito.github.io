@@ -1,0 +1,16 @@
+<div class="top-bar text-center position-relative">
+  <div class="top-bar-inner">
+    <ul class="social-list list-inline mx-auto">
+      {% for item in site.data.social%}
+      <li class="list-inline-item me-0 me-md-1 me-lg-2">
+        <a href="{{ item.url }}" target="_blank" title="{{ item.title }}">
+          <i class="{{ item.icon }}"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!--//social-list-->
+  </div>
+  <!--//top-bar-inner-->
+</div>
+<!--//top-bar-->
