@@ -1,6 +1,33 @@
 <section class="resume-experience-section resume-section">
   <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
-    <i class="resume-section-heading-icon bi bi-file-text me-2"></i>
+    <i class="resume-section-heading-icon bi bi-cup-hot me-2"></i>
     Service
   </h3>
+  <div class="resume-timeline position-relative">
+    {% for item in site.data.service %}
+    <article class="resume-timeline-item position-relative pb-3">
+      <div class="resume-timeline-item-header mb-2">
+        <h3 class="resume-position-title mb-1">{{ item.title }}</h3>
+      </div>
+      <!--//resume-timeline-item-header-->
+      <div class="resume-timeline-item-desc">
+        <ul class="list-inline">
+          {% assign events = item.events | sort: 'acronym' %}
+          <!-- show badges -->
+          {% for event in events %}
+          <li class="list-inline-item">
+            <a class="badge resume-skill-badge" title="{{ event.title }}"
+              >{{ event.acronym }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!--//resume-timeline-item-desc-->
+    </article>
+    <!--//resume-timeline-item-->
+    {% endfor %}
+  </div>
+  <!--//resume-timeline-->
 </section>
+<!--//resume-service-section-->

@@ -1,0 +1,88 @@
+- title: "Programme Committee Member"
+  events:
+    - title: 23rd International Conference on Autonomous Agents and Multi-Agent Systems)
+      acronym: AAMAS 2024
+      year: 2024
+    - title: Latin American Symposium on Theory of Computation
+      acronym: SLTC 2022
+      year: 2022
+    - title: International Conference on Microservices 2022
+      acronym: Microservices 2022
+      year: 2022
+    - title: 15 Congreso Colombiano de Computación
+      acronym: 15CCC
+      year: 2021
+    - title: 18th Linux Audio Conference
+      acronym: LAC2020
+      year: 2020
+
+- title: "Artifact Evaluation Committee Member"
+  events:
+    - title: International Conference on Formal Methods in Software Engineering
+      acronym: FormaliSE 2024
+      year: 2024
+    - title: ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Application
+      acronym: OOPSLA 2024
+      year: 2024
+    - title: 51st ACM SIGPLAN Symposium on Principles of Programming Languages
+      acronym: POPL 2024
+      year: 2024
+    - title: 28th ACM SIGPLAN International Conference on Functional Programming
+      acronym: ICFP 2023
+      year: 2023
+    - title: International Conference on Formal Modeling and Analysis of Timed Systems
+      acronym: FORMATS 2023
+      year: 2023
+    - title: International Conference on Formal Methods in Software Engineering
+      acronym: FormaliSE 2023
+      year: 2023
+    - title: 50th ACM SIGPLAN Symposium on Principles of Programming Languages
+      acronym: POPL 2023
+      year: 2023
+    - title: 27th ACM SIGPLAN International Conference on Functional Programming
+      acronym: ICFP 2022
+      year: 2022
+    - title: International Conference on Formal Methods in Software Engineering
+      acronym: FormaliSE 2022
+      year: 2022
+
+- title: "Reviewer"
+  events:
+    - title: 25th International Symposium on Principles and Practice of Declarative Programming
+      acronym: PPDP 2023
+      year: 2023
+    - title: 19th Annual Scientific Computing with Python conference
+      acronym: SciPy2020
+      year: 2020
+    - title: 18th Annual Scientific Computing with Python conference
+      acronym: SciPy2019
+      year: 2019
+    - title: 17th Annual Scientific Computing with Python conference
+      acronym: SciPy2018
+      year: 2018
+    - title: 15th International Colloquium on Theoretical Aspects of Computing
+      acronym: ICTAC2018
+      year: 2018
+    - title: 13th Latin American Theoretical INformatics Symposium
+      acronym: LATIN2018
+      year: 2018
+    - title: 16th Annual Scientific Computing with Python conference
+      acronym: SciPy2017
+      year: 2017
+    - title: 9th Conference on Interdisciplinary Musicology
+      acronym: CIM14
+      year: 2014
+# - title: "Best Tool Award Committee Member"
+#   events:
+#     - title: 42nd International Conference on Application and Theory of Petri Nets and Concurrency
+#       acronym: Petri Nets 2021
+#       year: 2021
+#     - title: 41st International Conference on Application and Theory of Petri Nets and Concurrency
+#       acronym: Petri Nets 2020
+#       year: 2020
+
+# - title: "Jury Board Member"
+#   events:
+#     - title: "APSA Science and Technology Challenge - Ethiopia 2018: Technologies and Innovations for Sustainable Development"
+#       acronym: APSA Challenge 2018
+#       year: 2018
