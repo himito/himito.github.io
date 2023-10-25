@@ -1,0 +1,42 @@
+<section class="resume-experience-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-briefcase me-2"></i>
+    Publications
+  </h3>
+  <p>
+    My list of publications is available in
+    <a href="https://dblp.uni-trier.de/pid/157/6674.html" target="_blank"
+      >DBLP</a
+    >
+    and
+    <a
+      href="https://hal.archives-ouvertes.fr/search/index/?q=jaime+arias&authIdHal_s=jaime-arias"
+      target="_blank"
+      >HAL</a
+    >.
+  </p>
+
+  <div class="resume-timeline position-relative">
+    {% for item in site.data.manuscripts %}
+    <article class="resume-timeline-item position-relative pb-3">
+      <div class="resume-timeline-item-header mb-2">
+        <div class="resume-position-meta d-flex justify-content-between mb-1">
+          <div class="resume-position-time">{{ item.year }}</div>
+          <div class="resume-company-name">{{ item.institution }}</div>
+        </div>
+        <h3 class="resume-position-title mb-1">{{ item.title }}</h3>
+      </div>
+      <!--//resume-timeline-item-header-->
+      <div class="resume-timeline-item-desc">
+        <ul class="resume-timeline-list">
+          <li>{{ item.citation }}</li>
+        </ul>
+      </div>
+      <!--//resume-timeline-item-desc-->
+    </article>
+    {% endfor %}
+    <!--//resume-timeline-item-->
+  </div>
+  <!--//resume-timeline-->
+</section>
+<!--//resume-experience-section-->
