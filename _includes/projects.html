@@ -1,0 +1,21 @@
+<section class="resume-projects-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-code-slash me-2"></i>
+    Projects
+  </h3>
+  {% assign projects = site.data.projects | sort: 'year' | reverse %} {% for
+  item in projects %}
+  <div class="item">
+    <h4 class="item-heading">
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="item-icon bi bi-square-fill me-2"></i>{{ item.title }}
+        </div>
+        <div class="resume-project-year">{{ item.year }}</div>
+      </div>
+    </h4>
+    <div class="item-desc">{{ item.description }}</div>
+  </div>
+  <!--//item-->
+  {% endfor %}
+</section>

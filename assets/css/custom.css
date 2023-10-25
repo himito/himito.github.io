@@ -2,6 +2,22 @@
   text-align: justify;
 }
 
+.item-desc {
+  text-align: justify;
+}
+
 a > strong {
   color: #354765;
+}
+
+ul.resume-timeline-list {
+  text-align: justify;
+}
+
+.resume-project-year {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
