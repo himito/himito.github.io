@@ -1,0 +1,16 @@
+<section class="resume-educate-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-list-task me-2"></i>
+    Responsibilities
+  </h3>
+  <ul class="list-unstyled">
+    {% for item in site.data.responsibilities %}
+    <li class="mt-2">
+      <div class="resume-degree font-weight-bold">{{ item.title }}</div>
+      <div class="resume-degree-org">{{ item.institution }}</div>
+      <div class="resume-degree-time font-italic">{{ item.period }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<!--//resume-section-->
