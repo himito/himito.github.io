@@ -1,0 +1,52 @@
+<section class="resume-projects-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-code me-2"></i>
+    Software
+  </h3>
+  {% assign software = site.data.software | sort: 'title' %}
+  <div class="item">
+    <span class="item-heading">
+      <i class="item-icon bi bi-square-fill me-2"></i>I am actively
+      participating in:
+    </span>
+    <div class="item-desc mt-2">
+      <ul class="list-inline">
+        {% for item in software %} {% if item.status == "current" %}
+        <li class="list-inline-item">
+          <a
+            href="{{ item.url }}"
+            target="_blank"
+            class="badge resume-skill-badge"
+            title="{{ item.description }}"
+            >{{ item.title }}</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <!--//item-->
+  <div class="item">
+    <span class="item-heading mb-2">
+      <i class="item-icon bi bi-square-fill me-2"></i>In the past, I contributed
+      to:
+    </span>
+    <div class="item-desc mt-2">
+      <ul class="list-inline">
+        {% for item in software %} {% if item.status == "past" %}
+        <li class="list-inline-item">
+          <a
+            href="{{ item.url }}"
+            target="_blank"
+            class="badge resume-skill-badge"
+            title="{{ item.description }}"
+            >{{ item.title }}</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <!--//item-->
+</section>
+<!--//resume-section-->

@@ -14,9 +14,17 @@
   url: "https://dblp.uni-trier.de/pid/157/6674.html"
   icon: "ai ai-dblp"
 
+- name: "gitlab"
+  url: "https://depot.lipn.univ-paris13.fr/arias"
+  icon: "fa-brands fa-gitlab"
+
 - name: "github"
   url: "https://github.com/himito"
   icon: "fa-brands fa-github"
+
+- name: "mastodon"
+  url: "https://lipn.info/@arias"
+  icon: "fa-brands fa-mastodon"
 
 - name: "twitter"
   url: "http://twitter.com/himiteins"

@@ -1,0 +1,116 @@
+- title: ADT2AMAS
+  url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
+  status: current
+  description: |
+    Tool to translate an Attack-Defence tree (ADTree) model into its
+    Asynchronous Multi-Agent System (AMAS) model.
+
+- title: CosyVerif
+  url: https://www.cosyverif.org/
+  status: current
+  description: |
+    Software environment for the formal specification and verification of
+    dynamic systems.
+
+- title: Imitator
+  url: https://www.imitator.fr/
+  status: current
+  description: |
+    Tool for parametric verification and robustness analysis of real-time
+    systems with parameters.
+
+# - title: PTA2Maude
+#   url: https://depot.lipn.univ-paris13.fr/arias/pta2maude
+#   status: current
+#   description: |
+#     Tool to translate a Parametric Timed Automata (PTA) model into a Maude
+#     specification.
+
+# - title: PITPN2Maude
+#   url: https://depot.lipn.univ-paris13.fr/arias/pitpn2maude
+#   status: current
+#   description: |
+#     Tool to translate a Parametric Time Petri Nets with Inhibitor Arcs (PITPN)
+#     model into Maude specification.
+
+- title: PMC-SOG
+  url: https://sites.lipn.univ-paris13.fr/websites/pmc-sog
+  status: current
+  description: |
+    Parallel and distributed model checking using the Symbolic Observation Graph
+    (SOG).
+
+- title: SOGMBT
+  url: https://depot.lipn.univ-paris13.fr/PMC-SOG/sogMBT
+  status: current
+  description: |
+    Symbolic Observation Graph-Based Generator of Test Paths
+
+- title: Solidity2CPN
+  url: https://soliditycpn.lipn.univ-paris13.fr/
+  status: current
+  description: |
+    Tool for the formal verification of smart contracts using Coloured Petri
+    Nets.
+
+- title: VMO-Score
+  url: https://vmo-score.github.io/
+  status: past
+  description: |
+    Tool to create an i-score interactive score to control the improvisation
+    generated from VMO according to larger structures found in an audio
+    recording.
+
+- title: SyMoN
+  url: https://github.com/himito/symon
+  status: past
+  description: |
+    Symbolic model checker for the non-deterministic timed concurrent constraint
+    calculus NTCC.
+
+- title: PyHRF
+  url: https://pyhrf.github.io/
+  status: past
+  description: |
+    Tools to analyze fMRI data focused on the characterization of the
+    hemodynamics.
+
+- title: T-Calculus
+  url: https://poset.labri.fr/tcalculus/
+  status: past
+  description: |
+    Reactive/real-time programming language prototype embedded in Haskell.
+
+- title: ossia
+  url: https://ossia.io/
+  status: past
+  description: |
+    A free and open-source inter-media sequencer.
+
+- title: ReactiveIS
+  url: https://github.com/himito/reactiveIS
+  status: past
+  description: |
+    Synchronous programming language for writing and executing interactive
+    scenarios.
+
+- title: IS2UPPAAL
+  url: https://github.com/himito/is2uppaal
+  status: past
+  description: |
+    Tool to translate an interactive scenario written in i-score into its UPPAAL
+    model.
+
+- title: RItMos
+  url: https://github.com/himito/ritmos
+  status: past
+  description: |
+    Interpreter of interactive multimedia scenarios implemented in the reactive
+    synchronous language ReactiveML, and endowed with a graphical feedback of
+    the execution in INScore.
+
+- title: tccMChecker
+  url: https://github.com/himito/tccMChecker
+  status: past
+  description: |
+    Model checker for the timed concurrent constraint calculus TCC.
