@@ -1,13 +1,13 @@
 - title: "Programme Committee Member"
   events:
     - title: 23rd International Conference on Autonomous Agents and Multi-Agent Systems)
-      acronym: AAMAS 2024
+      acronym: AAMAS2024
       year: 2024
     - title: Latin American Symposium on Theory of Computation
-      acronym: SLTC 2022
+      acronym: SLTC2022
       year: 2022
     - title: International Conference on Microservices 2022
-      acronym: Microservices 2022
+      acronym: Microservices2022
       year: 2022
     - title: 15 Congreso Colombiano de Computación
       acronym: 15CCC
@@ -19,37 +19,37 @@
 - title: "Artifact Evaluation Committee Member"
   events:
     - title: International Conference on Formal Methods in Software Engineering
-      acronym: FormaliSE 2024
+      acronym: FormaliSE2024
       year: 2024
     - title: ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Application
-      acronym: OOPSLA 2024
+      acronym: OOPSLA2024
       year: 2024
     - title: 51st ACM SIGPLAN Symposium on Principles of Programming Languages
-      acronym: POPL 2024
+      acronym: POPL2024
       year: 2024
     - title: 28th ACM SIGPLAN International Conference on Functional Programming
-      acronym: ICFP 2023
+      acronym: ICFP2023
       year: 2023
     - title: International Conference on Formal Modeling and Analysis of Timed Systems
-      acronym: FORMATS 2023
+      acronym: FORMATS2023
       year: 2023
     - title: International Conference on Formal Methods in Software Engineering
-      acronym: FormaliSE 2023
+      acronym: FormaliSE2023
       year: 2023
     - title: 50th ACM SIGPLAN Symposium on Principles of Programming Languages
-      acronym: POPL 2023
+      acronym: POPL2023
       year: 2023
     - title: 27th ACM SIGPLAN International Conference on Functional Programming
-      acronym: ICFP 2022
+      acronym: ICFP2022
       year: 2022
     - title: International Conference on Formal Methods in Software Engineering
-      acronym: FormaliSE 2022
+      acronym: FormaliSE2022
       year: 2022
 
 - title: "Reviewer"
   events:
     - title: 25th International Symposium on Principles and Practice of Declarative Programming
-      acronym: PPDP 2023
+      acronym: PPDP2023
       year: 2023
     - title: 19th Annual Scientific Computing with Python conference
       acronym: SciPy2020
