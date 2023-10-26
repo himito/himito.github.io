@@ -12,15 +12,17 @@
       <!--//resume-timeline-item-header-->
       <div class="resume-timeline-item-desc">
         <ul class="list-inline">
-          {% assign events = item.events | sort: 'acronym' %}
+          {% assign years = item.events | group_by: "year" %} {% assign
+          yearsSorted = years | sort: 'name' | reverse %}
           <!-- show badges -->
-          {% for event in events %}
+          {% for y in yearsSorted %} {% assign events = y.items | sort: "title"
+          %} {% for event in events %}
           <li class="list-inline-item">
             <a class="badge resume-skill-badge" title="{{ event.title }}"
               >{{ event.acronym }}</a
             >
           </li>
-          {% endfor %}
+          {% endfor %} {% endfor %}
         </ul>
       </div>
       <!--//resume-timeline-item-desc-->
