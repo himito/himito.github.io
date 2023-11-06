@@ -4,8 +4,8 @@ email: arias@lipn.univ-paris13.fr
 description: My personal website
 timezone: Europe/Paris
 encoding: utf-8
-baseurl: "/arias/site"
-url: "/"
+baseurl: ""
+url: "https://www.jaime-arias.fr"
 
 # Build settings
 markdown: kramdown
