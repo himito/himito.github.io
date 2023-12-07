@@ -29,3 +29,7 @@
 - name: "twitter"
   url: "http://twitter.com/himiteins"
   icon: "fa-brands fa-twitter"
+
+- name: "linkedin"
+  url: "https://www.linkedin.com/in/jaime-arias-almeida-2a24182a0"
+  icon: "fa-brands fa-linkedin-in"

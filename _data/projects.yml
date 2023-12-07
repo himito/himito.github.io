@@ -1,3 +1,10 @@
+- title: "CORRECTNESS"
+  year: 2024
+  description: |
+    Project funded by <a href="https://www.mshparisnord.fr/" target="_blank">MSH
+    Paris Nord</a> that aims to give <strong>ReativeIS</strong> formal and
+    executable semantics in rewriting logic.
+
 - title: "PISTACHE"
   year: 2024
   description: |

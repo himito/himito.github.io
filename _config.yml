@@ -5,6 +5,7 @@ description: CNRS Research Engineer
 timezone: Europe/Paris
 encoding: utf-8
 baseurl: ""
+# url: "/" # for development
 url: "https://www.jaime-arias.fr"
 
 # Build settings
