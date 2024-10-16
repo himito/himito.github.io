@@ -8,6 +8,9 @@
       year: 2024
 - title: "Programme Committee Member"
   events:
+    - title: 24th International Conference on Autonomous Agents and Multi-Agent Systems)
+      acronym: AAMAS2025
+      year: 2025
     - title: 23rd International Conference on Autonomous Agents and Multi-Agent Systems)
       acronym: AAMAS2024
       year: 2024
@@ -26,6 +29,9 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
+    - title: 52nd ACM SIGPLAN Symposium on Principles of Programming Languages
+      acronym: POPL2025
+      year: 2025
     - title: International Conference on Formal Methods in Software Engineering
       acronym: FormaliSE2024
       year: 2024
