@@ -29,7 +29,10 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
-    - title: 52nd ACM SIGPLAN Symposium on Principles of Programming Languages
+    - title: The Art, Science, and Engineering of Programming
+      acronym: Programming
+      year: 2025
+    - title:
       acronym: POPL2025
       year: 2025
     - title: International Conference on Formal Methods in Software Engineering
