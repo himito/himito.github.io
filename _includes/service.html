@@ -18,7 +18,11 @@
           {% for y in yearsSorted %} {% assign events = y.items | sort: "title"
           %} {% for event in events %}
           <li class="list-inline-item">
-            <a class="badge resume-skill-badge" title="{{ event.title }}"
+            <a
+              class="badge resume-skill-badge"
+              href="{{ event.url }}"
+              target="_blank"
+              title="{{ event.title }}"
               >{{ event.acronym }}</a
             >
           </li>
