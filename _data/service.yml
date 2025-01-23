@@ -41,6 +41,10 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
+    - title: 46th ACM SIGPLAN Conference on Programming Language Design and Implementation
+      acronym: PLDI2025
+      year: 2025
+      url: https://pldi25.sigplan.org/track/pldi-2025-pldi-research-artifacts
     - title: The Art, Science, and Engineering of Programming
       acronym: Programming
       year: 2025
