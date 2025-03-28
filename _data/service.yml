@@ -41,6 +41,10 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
+    - title: 37th International Conference on Computer Aided Verification
+      acronym: CAV2025
+      year: 2025
+      url: https://conferences.i-cav.org/2025/artifact/
     - title: 46th ACM SIGPLAN Conference on Programming Language Design and Implementation
       acronym: PLDI2025
       year: 2025
