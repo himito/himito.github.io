@@ -45,6 +45,10 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
+    - title: ACM SIGPLAN International Conference on Functional Programming
+      acronym: ICFP2025
+      year: 2025
+      url: https://icfp25.sigplan.org/
     - title: 37th International Conference on Computer Aided Verification
       acronym: CAV2025
       year: 2025
