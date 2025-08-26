@@ -22,10 +22,6 @@
   url: "https://github.com/himito"
   icon: "fa-brands fa-github"
 
-- name: "mastodon"
-  url: "https://lipn.info/@arias"
-  icon: "fa-brands fa-mastodon"
-
 - name: "twitter"
   url: "https://x.com/himiteins"
   icon: "fa-brands fa-twitter"
