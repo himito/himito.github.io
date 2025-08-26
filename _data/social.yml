@@ -22,10 +22,6 @@
   url: "https://github.com/himito"
   icon: "fa-brands fa-github"
 
-- name: "twitter"
-  url: "https://x.com/himiteins"
-  icon: "fa-brands fa-twitter"
-
 - name: "linkedin"
   url: "https://www.linkedin.com/in/jaimeariasalmeida"
   icon: "fa-brands fa-linkedin-in"
