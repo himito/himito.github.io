@@ -10,6 +10,10 @@
       url: https://sites.lipn.univ-paris13.fr/workshops/syncop24
 - title: "Programme Committee Member"
   events:
+    - title: 25th International Conference on Autonomous Agents and Multi-Agent Systems)
+      acronym: AAMAS2026
+      year: 2026
+      url: https://cyprusconferences.org/aamas2026/
     - title: 28th European Conference on Artificial Intelligence
       acronym: ECAI2025
       year: 2025
@@ -45,6 +49,10 @@
 
 - title: "Artifact Evaluation Committee Member"
   events:
+    - title: 53rd ACM SIGPLAN Symposium on Principles of Programming Languages
+      acronym: POPL2026
+      year: 2026
+      url: https://popl26.sigplan.org/track/POPL-2026-artifact-evaluation
     - title: ACM SIGPLAN International Conference on Functional Programming
       acronym: ICFP2025
       year: 2025
@@ -61,7 +69,7 @@
       acronym: Programming
       year: 2025
       url: https://programming-journal.org/artifact-evaluation/
-    - title:
+    - title: 52nd ACM SIGPLAN Symposium on Principles of Programming Languages
       acronym: POPL2025
       year: 2025
       url: https://popl25.sigplan.org/track/POPL-2025-artifact-evaluation
