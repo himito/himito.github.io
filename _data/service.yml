@@ -8,6 +8,16 @@
       acronym: SynCoP2024
       year: 2024
       url: https://sites.lipn.univ-paris13.fr/workshops/syncop24
+- title: "Steering Committee"
+  events:
+    - title: "Journées nationales du DEVeloppement logiciel"
+      acronym: "JDEV"
+      year: "2025"
+      url: "https://www.devlog.cnrs.fr/jdev/"
+    - title: "ANF ENVOL"
+      acronym: "ANF ENVOL"
+      year: "2024"
+      url: "https://indico.in2p3.fr/event/36333/"
 - title: "Programme Committee Member"
   events:
     - title: 25th International Conference on Autonomous Agents and Multi-Agent Systems)
