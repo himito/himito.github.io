@@ -3,12 +3,6 @@
   status: current
   description: |
     Ressource lexicale morphologique extensible et modulaire pour le français
-- title: ADT2AMAS
-  url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
-  status: current
-  description: |
-    Tool to translate an Attack-Defence tree (ADTree) model into its
-    Asynchronous Multi-Agent System (AMAS) model.
 
 - title: CosyVerif
   url: https://www.cosyverif.org/
@@ -57,6 +51,13 @@
   description: |
     Tool for the formal verification of smart contracts using Coloured Petri
     Nets.
+
+- title: ADT2AMAS
+  url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
+  status: past
+  description: |
+    Tool to translate an Attack-Defence tree (ADTree) model into its
+    Asynchronous Multi-Agent System (AMAS) model.
 
 - title: VMO-Score
   url: https://vmo-score.github.io/
