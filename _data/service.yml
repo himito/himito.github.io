@@ -20,6 +20,10 @@
       url: "https://indico.in2p3.fr/event/36333/"
 - title: "Programme Committee Member"
   events:
+    - title: 35th International Joint Conference on Artificial Intelligence
+      acronym: IJCAI-ECAI 2026
+      year: 2026
+      url: https://2026.ijcai.org/
     - title: 25th International Conference on Autonomous Agents and Multi-Agent Systems)
       acronym: AAMAS2026
       year: 2026
