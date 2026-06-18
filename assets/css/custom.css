@@ -291,6 +291,33 @@ hr {
 
 .software-past { margin-top: 0.25rem; }
 
+/* More prominent subheadings inside the Software and Publications sections */
+.resume-software-section .resume-subheading,
+.resume-experience-section .resume-subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--ink);
+  font-size: 0.8rem;
+  letter-spacing: 0.13rem;
+}
+.resume-software-section .resume-subheading::before,
+.resume-experience-section .resume-subheading::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 16px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+.resume-software-section .resume-subheading::after,
+.resume-experience-section .resume-subheading::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--border);
+}
+
 /* ------------------------- Chips / badges ---------------------------- */
 .light-mode .resume-skill-badge {
   background: var(--chip-bg);

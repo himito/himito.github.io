@@ -1,5 +1,5 @@
 - name: "HAL"
-  url: "https://hal.science/search/index/?q=%2A&rows=30&authIdPerson_i=1722&sort=publicationDate_tdate+desc"
+  url: "https://cv.hal.science/jaime-arias"
   icon: "ai ai-hal"
 
 - name: "ORCiD"
