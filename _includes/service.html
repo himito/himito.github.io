@@ -1,39 +1,41 @@
-<section class="resume-experience-section resume-section">
+<section class="resume-service-section resume-section">
   <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
-    <i class="resume-section-heading-icon bi bi-cup-hot me-2"></i>
+    <i class="resume-section-heading-icon bi bi-people me-2"></i>
     Service
   </h3>
-  <div class="resume-timeline position-relative">
+  <p class="resume-section-intro">
+    Roles in the organisation and reviewing of international conferences,
+    workshops, and journals.
+  </p>
+
+  <div class="service-groups">
     {% for item in site.data.service %}
-    <article class="resume-timeline-item position-relative pb-3">
-      <div class="resume-timeline-item-header mb-2">
-        <h3 class="resume-position-title mb-1">{{ item.title }}</h3>
-      </div>
-      <!--//resume-timeline-item-header-->
-      <div class="resume-timeline-item-desc">
-        <ul class="list-inline">
-          {% assign years = item.events | group_by: "year" %} {% assign
-          yearsSorted = years | sort: 'name' | reverse %}
-          <!-- show badges -->
-          {% for y in yearsSorted %} {% assign events = y.items | sort: "title"
-          %} {% for event in events %}
-          <li class="list-inline-item">
-            <a
-              class="badge resume-skill-badge"
-              href="{{ event.url }}"
-              target="_blank"
-              title="{{ event.title }}"
-              >{{ event.acronym }}</a
-            >
-          </li>
-          {% endfor %} {% endfor %}
-        </ul>
-      </div>
-      <!--//resume-timeline-item-desc-->
-    </article>
-    <!--//resume-timeline-item-->
+    <div class="service-group">
+      <h4 class="resume-subheading service-group-heading">
+        {{ item.title }}
+        <span class="service-count">{{ item.events | size }}</span>
+      </h4>
+      <ul class="list-inline service-chips mb-0">
+        {% assign years = item.events | group_by: "year" %}
+        {% assign yearsSorted = years | sort: 'name' | reverse %}
+        {% for y in yearsSorted %}
+        {% assign events = y.items | sort: "title" %}
+        {% for event in events %}
+        <li class="list-inline-item">
+          <a
+            class="badge resume-skill-badge"
+            href="{{ event.url }}"
+            target="_blank"
+            rel="noopener"
+            title="{{ event.title }} ({{ event.year }})"
+            >{{ event.acronym }}</a
+          >
+        </li>
+        {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
     {% endfor %}
   </div>
-  <!--//resume-timeline-->
 </section>
 <!--//resume-service-section-->

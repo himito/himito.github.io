@@ -1,0 +1,44 @@
+# Curated highlight of key publications shown on the home page.
+# Full lists live on DBLP and HAL (linked in the Publications section).
+# `me` marks your name so it can be emphasised in the author list.
+- title: "Strategic (timed) computation tree logic"
+  authors: "Jaime Arias, Wojciech Jamroga, Wojciech Penczek, Laure Petrucci, Teofil Sidoruk"
+  venue: "Autonomous Agents and Multi-Agent Systems (JAAMAS)"
+  type: "Journal"
+  year: 2026
+  url: "https://doi.org/10.1007/s10458-025-09726-4"
+
+- title: "Optimal Scheduling of Agents in ADTrees: Specialized Algorithm and Declarative Models"
+  authors: "Jaime Arias, Carlos Olarte, Laure Petrucci, Łukasz Maśko, Wojciech Penczek, Teofil Sidoruk"
+  venue: "IEEE Transactions on Reliability"
+  type: "Journal"
+  year: 2024
+  url: "https://doi.org/10.1109/TR.2024.3354459"
+
+- title: "A Rewriting-logic-with-SMT-based Formal Analysis and Parameter Synthesis Framework for Parametric Time Petri Nets"
+  authors: "Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Ölveczky, Laure Petrucci"
+  venue: "Fundamenta Informaticae"
+  type: "Journal"
+  year: 2024
+  url: "https://doi.org/10.3233/FI-242195"
+
+- title: "CosyVerif: The Path to Formalisms Cohabitation"
+  authors: "Jaime Arias, Étienne André, Benoît Barbot, Francis Hulin-Hubard, Fabrice Kordon, Van-François Le, Laure Petrucci"
+  venue: "Application and Theory of Petri Nets and Concurrency (Petri Nets)"
+  type: "Conference"
+  year: 2024
+  url: "https://doi.org/10.1007/978-3-031-61433-0_21"
+
+- title: "Symbolic Observation Graph-Based Generation of Test Paths"
+  authors: "Jaime Arias, Kais Klai, Mohamed Taha Bennani, Jörg Desel, Hanen Ochi"
+  venue: "Tests and Proofs (TAP)"
+  type: "Conference"
+  year: 2023
+  url: "https://doi.org/10.1007/978-3-031-38828-6_8"
+
+- title: "Strategic (Timed) Computation Tree Logic"
+  authors: "Jaime Arias, Wojciech Jamroga, Wojciech Penczek, Laure Petrucci, Teofil Sidoruk"
+  venue: "Autonomous Agents and Multi-Agent Systems (AAMAS)"
+  type: "Conference"
+  year: 2023
+  url: "https://dl.acm.org/doi/10.5555/3545946.3598661"

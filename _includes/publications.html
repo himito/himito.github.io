@@ -3,19 +3,34 @@
     <i class="resume-section-heading-icon bi bi-file-text me-2"></i>
     Publications
   </h3>
-  <p>
-    My list of publications is available in
-    <a href="https://dblp.uni-trier.de/pid/157/6674.html" target="_blank"
-      >DBLP</a
-    >
+  <p class="resume-section-intro">
+    A selection of recent work is highlighted below. The complete list is
+    available on
+    <a href="https://dblp.uni-trier.de/pid/157/6674.html" target="_blank" rel="noopener">DBLP</a>
     and
-    <a
-      href="https://hal.archives-ouvertes.fr/search/index/?q=jaime+arias&authIdHal_s=jaime-arias"
-      target="_blank"
-      >HAL</a
-    >.
+    <a href="https://hal.science/search/index/?q=%2A&authIdHal_s=jaime-arias" target="_blank" rel="noopener">HAL</a>.
   </p>
 
+  <h4 class="resume-subheading">Selected publications</h4>
+  <ul class="pub-list list-unstyled">
+    {% for pub in site.data.selected_publications %}
+    <li class="pub-item">
+      <div class="pub-meta">
+        <span class="pub-year">{{ pub.year }}</span>
+        <span class="pub-type pub-type-{{ pub.type | downcase }}">{{ pub.type }}</span>
+      </div>
+      <div class="pub-body">
+        <a class="pub-title" href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+        <div class="pub-authors">
+          {{ pub.authors | replace: "Jaime Arias", "<span class='pub-me'>Jaime Arias</span>" }}
+        </div>
+        <div class="pub-venue">{{ pub.venue }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h4 class="resume-subheading mt-4">Theses</h4>
   <div class="resume-timeline position-relative">
     {% for item in site.data.manuscripts %}
     <article class="resume-timeline-item position-relative pb-3">

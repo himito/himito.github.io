@@ -289,6 +289,92 @@ hr {
   align-self: flex-start;
 }
 
+/* --------------------- Selected publications ------------------------- */
+.pub-list { margin-bottom: 0; }
+
+.pub-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.pub-item:first-child { padding-top: 0.25rem; }
+.pub-item:last-child { border-bottom: none; }
+
+.pub-meta {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  width: 5.5rem;
+}
+.pub-year {
+  font-weight: 800;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+.pub-type {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+.pub-type-journal { background: var(--accent-soft); color: var(--accent-strong); }
+.pub-type-conference { background: #eef4ee; color: #2f6b46; }
+
+.light-mode .pub-title {
+  display: block;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+.light-mode .pub-title:hover { color: var(--accent); text-decoration: none; }
+
+.pub-authors { font-size: 0.82rem; color: var(--body); line-height: 1.45; }
+.pub-me { color: var(--ink); font-weight: 700; }
+.pub-venue {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 575px) {
+  .pub-item { flex-direction: column; gap: 0.4rem; }
+  .pub-meta { flex-direction: row; align-items: center; width: auto; }
+}
+
+/* --------------------------- Service --------------------------------- */
+.service-group { margin-bottom: 1.4rem; }
+.service-group:last-child { margin-bottom: 0; }
+
+.service-group-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.service-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.service-chips .list-inline-item { margin-bottom: 0.4rem; }
+
 /* --------------------------- Timelines ------------------------------- */
 .light-mode .resume-timeline:before { background: var(--border); }
 .light-mode .resume-timeline-item:before {
