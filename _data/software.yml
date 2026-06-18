@@ -39,6 +39,7 @@
 - title: SOGMBT
   url: https://depot.lipn.univ-paris13.fr/PMC-SOG/sogMBT
   status: current
+  logo: sogmbt.svg
   stack: [C++]
   description: |
     Model-based testing tool that derives observable test paths from a Petri net model via its SOG (a compact abstraction of the state space).

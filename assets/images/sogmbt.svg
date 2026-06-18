@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 124" width="130" height="124">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#348f4f"></path></marker></defs>
+  <line x1="37" y1="30" x2="91" y2="30" stroke="#348f4f" stroke-width="6" marker-end="url(#a)"></line>
+  <line x1="99.3" y1="41.1" x2="71.7" y2="86.9" stroke="#348f4f" stroke-width="6" marker-end="url(#a)"></line>
+  <line x1="58.3" y1="86.9" x2="30.7" y2="41.1" stroke="#348f4f" stroke-width="6" marker-end="url(#a)"></line>
+  <circle cx="24" cy="30" r="13" fill="#4461be"></circle>
+  <circle cx="106" cy="30" r="13" fill="#4461be"></circle>
+  <circle cx="65" cy="98" r="13" fill="#4461be"></circle>
+  <circle cx="65" cy="52.7" r="15" fill="#348f4f"></circle>
+  <polyline points="56,53 63,60.5 75,45" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+</svg>
