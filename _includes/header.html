@@ -13,7 +13,14 @@
         </li>
         <li class="list-inline-item me-md-3 me-lg-5">
           <i class="resume-contact-icon bi bi-envelope me-2"></i>
-          {{ site.email }}
+          <!-- Email is stored reversed and rebuilt by JS to thwart scrapers -->
+          <a
+            class="resume-contact-email"
+            href="#"
+            data-rev="{{ site.email | split: '' | reverse | join: '' }}"
+            aria-label="Email"
+            >contact me by email</a
+          >
         </li>
         <li class="list-inline-item me-lg-5">
           <i class="resume-contact-icon bi bi-globe me-2"></i>
@@ -26,3 +33,15 @@
   <!--//profile-holder-->
 </div>
 <!--//resume-header-->
+
+<script>
+  // Rebuild the email address from its reversed form so it is never present
+  // as plain text in the HTML source (defeats most automated harvesters).
+  (function () {
+    document.querySelectorAll("a.resume-contact-email[data-rev]").forEach(function (el) {
+      var addr = el.getAttribute("data-rev").split("").reverse().join("");
+      el.setAttribute("href", "mailto:" + addr);
+      el.textContent = addr;
+    });
+  })();
+</script>
