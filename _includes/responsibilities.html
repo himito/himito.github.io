@@ -3,12 +3,17 @@
     <i class="resume-section-heading-icon bi bi-list-task me-2"></i>
     Responsibilities
   </h3>
-  <ul class="list-unstyled">
+  <ul class="resp-list list-unstyled mb-0">
     {% for item in site.data.responsibilities %}
-    <li class="mt-2">
-      <div class="resume-degree font-weight-bold">{{ item.title }}</div>
-      <div class="resume-degree-org">{{ item.institution }}</div>
-      <div class="resume-degree-time font-italic">{{ item.period }}</div>
+    {% assign parts = item.period | split: " - " %}
+    <li class="resp-row">
+      <div class="resp-row-head">
+        <span class="resp-title">{{ item.title }}</span>
+        <span class="resp-period{% if item.period contains 'current' %} resp-period-now{% endif %}">
+          {% if item.period contains 'current' %}Since {{ parts[0] }}{% else %}{{ parts[0] }}–{{ parts[1] }}{% endif %}
+        </span>
+      </div>
+      <div class="resp-org">{{ item.institution }}</div>
     </li>
     {% endfor %}
   </ul>
