@@ -8,6 +8,7 @@
 - title: CosyVerif
   url: https://www.cosyverif.org/
   status: current
+  logo: cosyverif.png
   description: |
     Software environment for the formal specification and verification of
     dynamic systems.
