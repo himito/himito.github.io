@@ -41,7 +41,7 @@
   status: current
   stack: [C++]
   description: |
-    Symbolic Observation Graph-Based Generator of Test Paths
+    Model-based testing tool that derives observable test paths from a Petri net model via its SOG (a compact abstraction of the state space).
 
 - title: Solidity2CPN
   url: https://soliditycpn.lipn.univ-paris13.fr/
