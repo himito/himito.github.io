@@ -54,6 +54,7 @@
 - title: ADT2AMAS
   url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
   status: current
+  logo: adt2amas.svg
   stack: [C++]
   description: |
     Tool to translate attack-defence trees (ADTrees) into asynchronous multi-agent systems (AMAS) and compute optimal agent scheduling for security
