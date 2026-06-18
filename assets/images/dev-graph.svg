@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9fc0ff"/>
+      <stop offset="0.55" stop-color="#66d7c6"/>
+      <stop offset="1" stop-color="#f0d06a"/>
+    </linearGradient>
+    <radialGradient id="node" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#9fc0ff"/>
+      <stop offset="1" stop-color="#2f5fd0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9fc0ff" fill-opacity="0.55"/>
+    </marker>
+    <mask id="readability">
+      <rect width="1200" height="360" fill="white"/>
+      <ellipse cx="600" cy="210" rx="320" ry="135" fill="black" opacity="0.45"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#readability)">
+    <g opacity="0.18" stroke="#ffffff" stroke-width="1">
+      <path d="M0 72H1200"/>
+      <path d="M0 144H1200"/>
+      <path d="M0 216H1200"/>
+      <path d="M0 288H1200"/>
+      <path d="M120 0V360"/>
+      <path d="M240 0V360"/>
+      <path d="M360 0V360"/>
+      <path d="M480 0V360"/>
+      <path d="M600 0V360"/>
+      <path d="M720 0V360"/>
+      <path d="M840 0V360"/>
+      <path d="M960 0V360"/>
+      <path d="M1080 0V360"/>
+    </g>
+
+    <g opacity="0.38" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#cbd8f2">
+      <text x="52" y="62">git push origin verification</text>
+      <text x="52" y="88">ci: model-check + tests</text>
+      <text x="52" y="114">build: solver / parser / ui</text>
+      <text x="52" y="140">trace: s0 -> s7 -> s13</text>
+      <text x="52" y="166">frontier.size = 2481</text>
+      <text x="52" y="192">counterexample? false</text>
+      <text x="52" y="218">release candidate</text>
+    </g>
+
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M388 226 C450 168 512 156 578 198 S704 260 782 190 S936 90 1080 142" stroke="url(#trace)" stroke-width="2.2" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+      <path d="M424 118 C492 80 560 82 626 132 S740 214 834 158 S962 88 1114 86" stroke="#9fc0ff" stroke-width="1.6" stroke-opacity="0.42" marker-end="url(#arrow)"/>
+      <path d="M438 282 C518 238 566 242 626 286 S746 326 820 266 S932 208 1094 250" stroke="#66d7c6" stroke-width="1.6" stroke-opacity="0.36" marker-end="url(#arrow)"/>
+      <path d="M580 198 L626 132 L782 190 L820 266 L626 286 L578 198" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <path d="M626 132 L834 158 L782 190" stroke="#ffffff" stroke-width="1" stroke-opacity="0.16"/>
+      <path d="M626 286 L782 190 L1080 142" stroke="#ffffff" stroke-width="1" stroke-opacity="0.14"/>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle cx="388" cy="226" r="6" fill="url(#node)" opacity="0.82"/>
+      <circle cx="424" cy="118" r="5" fill="url(#node)" opacity="0.72"/>
+      <circle cx="438" cy="282" r="5" fill="url(#node)" opacity="0.65"/>
+      <circle cx="578" cy="198" r="10" fill="url(#node)" opacity="0.88"/>
+      <circle cx="626" cy="132" r="8" fill="url(#node)" opacity="0.84"/>
+      <circle cx="626" cy="286" r="8" fill="url(#node)" opacity="0.72"/>
+      <circle cx="782" cy="190" r="11" fill="url(#node)" opacity="0.9"/>
+      <circle cx="820" cy="266" r="8" fill="url(#node)" opacity="0.7"/>
+      <circle cx="834" cy="158" r="7" fill="url(#node)" opacity="0.75"/>
+      <circle cx="936" cy="90" r="6" fill="url(#node)" opacity="0.65"/>
+      <circle cx="962" cy="88" r="5" fill="url(#node)" opacity="0.6"/>
+      <circle cx="1080" cy="142" r="9" fill="url(#node)" opacity="0.82"/>
+      <circle cx="1094" cy="250" r="7" fill="url(#node)" opacity="0.68"/>
+      <circle cx="1114" cy="86" r="6" fill="url(#node)" opacity="0.62"/>
+    </g>
+
+    <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#dce7ff" opacity="0.6">
+      <text x="374" y="247">S0</text>
+      <text x="561" y="221">S7</text>
+      <text x="609" y="117">S12</text>
+      <text x="761" y="180">S23</text>
+      <text x="1061" y="128">fixed point</text>
+      <text x="760" y="312">parallel frontier</text>
+    </g>
+
+    <g opacity="0.22">
+      <rect x="878" y="198" width="210" height="86" rx="10" fill="#0f172a" stroke="#9fc0ff"/>
+      <text x="898" y="225" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#dce7ff">explore(state)</text>
+      <text x="898" y="249" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#9fc0ff">  enqueue(successors)</text>
+      <text x="898" y="273" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#66d7c6">  verify(invariant)</text>
+    </g>
+  </g>
+</svg>
