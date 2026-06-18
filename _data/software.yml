@@ -4,7 +4,7 @@
   award: Best Demo Award at EGC 2026
   stack: [Docker, TypeScript]
   description: |
-    Ressource lexicale morphologique extensible et modulaire pour le français
+    Morphological lexical resource for French that automatically generates and identifies every inflected form of a word for Natural Language Processing tasks.
 
 - title: CosyVerif
   url: https://www.cosyverif.org/
@@ -12,8 +12,7 @@
   logo: cosyverif.png
   stack: [Docker, TypeScript, Java]
   description: |
-    Software environment for the formal specification and verification of
-    dynamic systems.
+    Extensible web platform for modelling and analysing systems across multiple coexisting formalisms (Petri nets, automata, attack-defence trees).
 
 - title: Imitator
   url: https://www.imitator.fr/
@@ -21,8 +20,7 @@
   logo: imitator.png
   stack: [OCaml]
   description: |
-    Tool for parametric verification and robustness analysis of real-time
-    systems with parameters.
+    Parametric timed model checker that synthesizes the timing-parameter valuations for which a real-time system satisfies its correctness specification.
 
 # - title: PTA2Maude
 #   url: https://depot.lipn.univ-paris13.fr/arias/pta2maude
@@ -58,7 +56,8 @@
   status: current
   stack: [C++]
   description: |
-    Tool to translate an Attack-Defence tree (ADTree) model into its Asynchronous Multi-Agent System (AMAS) model.
+    Tool to translate attack-defence trees (ADTrees) into asynchronous multi-agent systems (AMAS) and compute optimal agent scheduling for security
+    scenarios.
 
 - title: PMC-SOG
   url: https://sites.lipn.univ-paris13.fr/websites/pmc-sog
