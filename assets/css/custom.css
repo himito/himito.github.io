@@ -271,14 +271,13 @@ hr {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-strong);
-  background: rgba(47, 95, 208, 0.1);
-  border: 1px solid rgba(47, 95, 208, 0.16);
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.18rem 0.6rem;
   border-radius: 999px;
-  font-size: 0.72rem;
   font-weight: 700;
+  font-size: 0.74rem;
   line-height: 1;
-  padding: 0.2rem 0.5rem;
   white-space: nowrap;
 }
 .edu-year::before {
