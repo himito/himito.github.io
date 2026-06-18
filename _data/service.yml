@@ -18,7 +18,7 @@
       acronym: "ANF ENVOL"
       year: "2024"
       url: "https://indico.in2p3.fr/event/36333/"
-- title: "Programme Committee Member"
+- title: "Programme Committee"
   events:
     - title: 25th International Conference on Autonomous Agents and Multi-Agent Systems)
       acronym: AAMAS2026
@@ -57,7 +57,7 @@
       year: 2020
       url: https://lac2020.sciencesconf.org/resource/page/id/2.html
 
-- title: "Artifact Evaluation Committee Member"
+- title: "Artifact Evaluation Committee"
   events:
     - title: 53rd ACM SIGPLAN Symposium on Principles of Programming Languages
       acronym: POPL2026

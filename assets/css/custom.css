@@ -291,9 +291,10 @@ hr {
 
 .software-past { margin-top: 0.25rem; }
 
-/* More prominent subheadings inside the Software and Publications sections */
+/* More prominent subheadings: Software, Publications and Service sections */
 .resume-software-section .resume-subheading,
-.resume-experience-section .resume-subheading {
+.resume-experience-section .resume-subheading,
+.resume-service-section .resume-subheading {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -302,7 +303,8 @@ hr {
   letter-spacing: 0.13rem;
 }
 .resume-software-section .resume-subheading::before,
-.resume-experience-section .resume-subheading::before {
+.resume-experience-section .resume-subheading::before,
+.resume-service-section .resume-subheading::before {
   content: "";
   flex: 0 0 auto;
   width: 16px;
@@ -311,7 +313,8 @@ hr {
   background: var(--accent);
 }
 .resume-software-section .resume-subheading::after,
-.resume-experience-section .resume-subheading::after {
+.resume-experience-section .resume-subheading::after,
+.resume-service-section .resume-subheading::after {
   content: "";
   flex: 1 1 auto;
   height: 1px;
@@ -433,29 +436,9 @@ hr {
 }
 
 /* --------------------------- Service --------------------------------- */
-.service-group { margin-bottom: 1.4rem; }
+.service-group { margin-bottom: 1.5rem; }
 .service-group:last-child { margin-bottom: 0; }
 
-.service-group-heading {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.6rem;
-}
-.service-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.4rem;
-  height: 1.4rem;
-  padding: 0 0.4rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0;
-}
 .service-chips .list-inline-item { margin-bottom: 0.4rem; }
 
 /* --------------------------- Timelines ------------------------------- */
