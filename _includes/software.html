@@ -16,7 +16,12 @@
     {% for item in software %}{% if item.status == "current" %}
     <a class="software-card" href="{{ item.url }}" target="_blank" rel="noopener">
       <div class="software-card-head">
-        <span class="software-card-title">{{ item.title }}</span>
+        <span class="software-card-title">
+          {% if item.logo %}
+          <img class="software-card-logo" src="{{ 'assets/images/' | append: item.logo | relative_url }}" alt="{{ item.title }} logo" />
+          {% endif %}
+          {{ item.title }}
+        </span>
         <i class="bi bi-box-arrow-up-right software-card-link"></i>
       </div>
       <p class="software-card-desc">{{ item.description | strip_newlines }}</p>

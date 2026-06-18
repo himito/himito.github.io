@@ -365,9 +365,18 @@ hr {
   margin-bottom: 0.35rem;
 }
 .light-mode .software-card-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--ink);
   font-weight: 700;
   font-size: 0.98rem;
+}
+.software-card-logo {
+  height: 1.4rem;
+  width: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
 }
 .light-mode .software-card-link {
   color: var(--muted);

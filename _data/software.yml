@@ -15,6 +15,7 @@
 - title: Imitator
   url: https://www.imitator.fr/
   status: current
+  logo: imitator.png
   description: |
     Tool for parametric verification and robustness analysis of real-time
     systems with parameters.
