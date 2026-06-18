@@ -1,0 +1,7 @@
+# Maps a technology name (as used in software.yml `stack:`) to its Devicon class.
+# Reference: https://devicon.dev
+Docker: devicon-docker-plain
+TypeScript: devicon-typescript-plain
+Java: devicon-java-plain
+OCaml: devicon-ocaml-plain
+"C++": devicon-cplusplus-plain

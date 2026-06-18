@@ -412,6 +412,31 @@ hr {
   font-size: 0.82rem;
 }
 
+.software-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.6rem 0 0;
+}
+.light-mode .software-card-tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.14rem 0.5rem;
+  border-radius: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+.software-card-tech-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 .software-past { margin-top: 0.25rem; }
 
 /* More prominent subheadings: About, Software, Publications and Service sections */

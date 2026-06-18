@@ -2,6 +2,7 @@
   url: https://tal.lipn.univ-paris13.fr/morfetik2
   status: current
   award: Best Demo Award at EGC 2026
+  stack: [Docker, TypeScript]
   description: |
     Ressource lexicale morphologique extensible et modulaire pour le français
 
@@ -9,6 +10,7 @@
   url: https://www.cosyverif.org/
   status: current
   logo: cosyverif.png
+  stack: [Docker, TypeScript, Java]
   description: |
     Software environment for the formal specification and verification of
     dynamic systems.
@@ -17,6 +19,7 @@
   url: https://www.imitator.fr/
   status: current
   logo: imitator.png
+  stack: [OCaml]
   description: |
     Tool for parametric verification and robustness analysis of real-time
     systems with parameters.
@@ -38,12 +41,14 @@
 - title: SOGMBT
   url: https://depot.lipn.univ-paris13.fr/PMC-SOG/sogMBT
   status: current
+  stack: [C++]
   description: |
     Symbolic Observation Graph-Based Generator of Test Paths
 
 - title: Solidity2CPN
   url: https://soliditycpn.lipn.univ-paris13.fr/
   status: current
+  stack: [Docker, TypeScript, C++]
   description: |
     Tool for the formal verification of smart contracts using Coloured Petri
     Nets.
@@ -51,9 +56,9 @@
 - title: ADT2AMAS
   url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
   status: current
+  stack: [C++]
   description: |
-    Tool to translate an Attack-Defence tree (ADTree) model into its
-    Asynchronous Multi-Agent System (AMAS) model.
+    Tool to translate an Attack-Defence tree (ADTree) model into its Asynchronous Multi-Agent System (AMAS) model.
 
 - title: PMC-SOG
   url: https://sites.lipn.univ-paris13.fr/websites/pmc-sog

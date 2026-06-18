@@ -25,6 +25,17 @@
         <i class="bi bi-box-arrow-up-right software-card-link"></i>
       </div>
       <p class="software-card-desc">{{ item.description | strip_newlines }}</p>
+      {% if item.stack %}
+      <ul class="software-card-stack list-unstyled">
+        {% for tech in item.stack %}
+        <li class="software-card-tech">
+          {% assign icon = site.data.tech[tech] %}
+          {% if icon %}<i class="{{ icon }} colored software-card-tech-icon"></i>{% endif %}
+          {{ tech }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
       {% if item.award %}
       <span class="software-card-award">
         <i class="bi bi-award-fill software-card-award-icon"></i>
