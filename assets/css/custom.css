@@ -220,6 +220,7 @@ hr {
   font-size: 0.9rem;
   color: var(--muted);
   margin-bottom: 1.1rem;
+  text-align: justify;
 }
 
 .resume-subheading {
@@ -233,7 +234,7 @@ hr {
 
 /* --------------------------- About me -------------------------------- */
 .resume-summary-desc { font-size: 0.95rem; line-height: 1.65; }
-.resume-summary-desc > p { text-align: left; }
+.resume-summary-desc > p { text-align: justify; }
 .resume-summary-desc ul { padding-left: 1.1rem; }
 .resume-summary-desc li { margin-bottom: 0.3rem; }
 
@@ -285,6 +286,7 @@ hr {
   font-size: 0.83rem;
   line-height: 1.5;
   margin: 0;
+  text-align: justify;
 }
 
 .software-past { margin-top: 0.25rem; }
@@ -389,7 +391,7 @@ hr {
 }
 .light-mode .pub-title:hover { color: var(--accent); text-decoration: none; }
 
-.pub-authors { font-size: 0.82rem; color: var(--body); line-height: 1.45; }
+.pub-authors { font-size: 0.82rem; color: var(--body); line-height: 1.45; text-align: justify; }
 .pub-me { color: var(--ink); font-weight: 700; }
 .pub-venue {
   font-size: 0.8rem;
@@ -451,8 +453,8 @@ hr {
 }
 .resume-position-time { color: var(--muted); font-weight: 600; }
 .resume-timeline-list { color: var(--body); font-size: 0.86rem; }
-.resume-timeline-list { text-align: left; }
-.item-desc { text-align: left; }
+.resume-timeline-list { text-align: justify; }
+.item-desc { text-align: justify; }
 
 /* ------------------------ Responsibilities --------------------------- */
 .light-mode .resume-educate-section li { margin-bottom: 0.9rem; }
