@@ -36,9 +36,9 @@
   year: 2023
   url: "https://doi.org/10.1007/978-3-031-38828-6_8"
 
-- title: "Strategic (Timed) Computation Tree Logic"
-  authors: "Jaime Arias, Wojciech Jamroga, Wojciech Penczek, Laure Petrucci, Teofil Sidoruk"
+- title: "ADT2AMAS: Managing Agents in Attack-Defence Scenarios."
+  authors: "Jaime Arias, Wojciech Penczek, Laure Petrucci, Teofil Sidoruk"
   venue: "Autonomous Agents and Multi-Agent Systems (AAMAS)"
   type: "Conference"
-  year: 2023
-  url: "https://dl.acm.org/doi/10.5555/3545946.3598661"
+  year: 2021
+  url: "https://dl.acm.org/doi/10.5555/3463952.3464225"
