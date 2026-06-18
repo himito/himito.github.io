@@ -46,10 +46,10 @@
 - title: Solidity2CPN
   url: https://soliditycpn.lipn.univ-paris13.fr/
   status: current
+  logo: Solidity2CPN.svg
   stack: [Docker, TypeScript, C++]
   description: |
-    Tool for the formal verification of smart contracts using Coloured Petri
-    Nets.
+    Web platform that verifies Solidity smart contracts through Coloured Petri Nets and model checking, supporting vulnerability detection.
 
 - title: ADT2AMAS
   url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
