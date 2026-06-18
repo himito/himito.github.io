@@ -35,13 +35,6 @@
 #     Tool to translate a Parametric Time Petri Nets with Inhibitor Arcs (PITPN)
 #     model into Maude specification.
 
-- title: PMC-SOG
-  url: https://sites.lipn.univ-paris13.fr/websites/pmc-sog
-  status: current
-  description: |
-    Parallel and distributed model checking using the Symbolic Observation Graph
-    (SOG).
-
 - title: SOGMBT
   url: https://depot.lipn.univ-paris13.fr/PMC-SOG/sogMBT
   status: current
@@ -57,10 +50,17 @@
 
 - title: ADT2AMAS
   url: https://sites.lipn.univ-paris13.fr/websites/adt2amas
-  status: past
+  status: current
   description: |
     Tool to translate an Attack-Defence tree (ADTree) model into its
     Asynchronous Multi-Agent System (AMAS) model.
+
+- title: PMC-SOG
+  url: https://sites.lipn.univ-paris13.fr/websites/pmc-sog
+  status: past
+  description: |
+    Parallel and distributed model checking using the Symbolic Observation Graph
+    (SOG).
 
 - title: VMO-Score
   url: https://vmo-score.github.io/
