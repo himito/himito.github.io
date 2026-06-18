@@ -1,6 +1,13 @@
 source "https://rubygems.org"
 gem "jekyll", "~> 4.2.2"
 
+# Default gems removed from the Ruby standard library in Ruby 3.4+/4.0
+# that Jekyll 4.2 still expects to be available.
+gem "logger"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
 group :jekyll_plugins do
   gem "webrick"
 end

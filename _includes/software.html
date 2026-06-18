@@ -1,52 +1,43 @@
-<section class="resume-projects-section resume-section">
+<section class="resume-software-section resume-section">
   <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
-    <i class="resume-section-heading-icon bi bi-code me-2"></i>
+    <i class="resume-section-heading-icon bi bi-code-square me-2"></i>
     Software
   </h3>
+
+  <p class="resume-section-intro">
+    I design, develop, and maintain open-source research software. Below are
+    the tools I am actively maintaining, followed by past contributions.
+  </p>
+
   {% assign software = site.data.software | sort: 'title' %}
-  <div class="item">
-    <span class="item-heading">
-      <i class="item-icon bi bi-square-fill me-2"></i>I am actively
-      participating in:
-    </span>
-    <div class="item-desc mt-2">
-      <ul class="list-inline">
-        {% for item in software %} {% if item.status == "current" %}
-        <li class="list-inline-item">
-          <a
-            href="{{ item.url }}"
-            target="_blank"
-            class="badge resume-skill-badge"
-            title="{{ item.description }}"
-            >{{ item.title }}</a
-          >
-        </li>
-        {% endif %} {% endfor %}
-      </ul>
-    </div>
+
+  <h4 class="resume-subheading">Actively maintaining</h4>
+  <div class="software-grid">
+    {% for item in software %}{% if item.status == "current" %}
+    <a class="software-card" href="{{ item.url }}" target="_blank" rel="noopener">
+      <div class="software-card-head">
+        <span class="software-card-title">{{ item.title }}</span>
+        <i class="bi bi-box-arrow-up-right software-card-link"></i>
+      </div>
+      <p class="software-card-desc">{{ item.description | strip_newlines }}</p>
+    </a>
+    {% endif %}{% endfor %}
   </div>
-  <!--//item-->
-  <div class="item">
-    <span class="item-heading mb-2">
-      <i class="item-icon bi bi-square-fill me-2"></i>In the past, I contributed
-      to:
-    </span>
-    <div class="item-desc mt-2">
-      <ul class="list-inline">
-        {% for item in software %} {% if item.status == "past" %}
-        <li class="list-inline-item">
-          <a
-            href="{{ item.url }}"
-            target="_blank"
-            class="badge resume-skill-badge"
-            title="{{ item.description }}"
-            >{{ item.title }}</a
-          >
-        </li>
-        {% endif %} {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <!--//item-->
+
+  <h4 class="resume-subheading mt-4">Past contributions</h4>
+  <ul class="list-inline software-past mb-0">
+    {% for item in software %}{% if item.status == "past" %}
+    <li class="list-inline-item">
+      <a
+        href="{{ item.url }}"
+        target="_blank"
+        rel="noopener"
+        class="badge resume-skill-badge"
+        title="{{ item.description | strip_newlines }}"
+        >{{ item.title }}</a
+      >
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
 </section>
-<!--//resume-section-->
+<!--//resume-software-section-->
