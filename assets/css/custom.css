@@ -384,6 +384,25 @@ hr {
   text-align: justify;
 }
 
+.light-mode .software-card-award {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(214, 158, 46, 0.12);
+  border: 1px solid rgba(214, 158, 46, 0.3);
+  color: #9a6b00;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.software-card-award-icon {
+  color: #d69e2e;
+  font-size: 0.82rem;
+}
+
 .software-past { margin-top: 0.25rem; }
 
 /* More prominent subheadings: About, Software, Publications and Service sections */

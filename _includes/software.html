@@ -20,6 +20,12 @@
         <i class="bi bi-box-arrow-up-right software-card-link"></i>
       </div>
       <p class="software-card-desc">{{ item.description | strip_newlines }}</p>
+      {% if item.award %}
+      <span class="software-card-award">
+        <i class="bi bi-award-fill software-card-award-icon"></i>
+        {{ item.award }}
+      </span>
+      {% endif %}
     </a>
     {% endif %}{% endfor %}
   </div>
