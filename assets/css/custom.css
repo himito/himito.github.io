@@ -66,6 +66,7 @@ hr {
   border: 1px solid rgba(22, 33, 58, 0.06);
   overflow: hidden;
   margin-top: 0;
+  margin-bottom: 3rem; /* space below the card so its end is visible before the footer */
   padding-top: 0;
 }
 
