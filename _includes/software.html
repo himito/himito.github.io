@@ -4,9 +4,15 @@
     Software
   </h3>
 
+  {% assign gitlab = site.data.social | where: "name", "gitlab" | first %}
+  {% assign github = site.data.social | where: "name", "github" | first %}
+
   <p class="resume-section-intro">
     I design, develop, and maintain open-source research software. Below are
     the tools I am actively maintaining, followed by past contributions.
+    The complete list is available on
+    <a href="{{ gitlab.url }}" target="_blank" rel="noopener">GitLab</a> and
+    <a href="{{ github.url }}" target="_blank" rel="noopener">GitHub</a>.
   </p>
 
   {% assign software = site.data.software | sort: 'title' %}
@@ -18,7 +24,8 @@
       <div class="software-card-head">
         <span class="software-card-title">
           {% if item.logo %}
-          <img class="software-card-logo" src="{{ 'assets/images/' | append: item.logo | relative_url }}" alt="{{ item.title }} logo" />
+          <img class="software-card-logo" src="{{ 'assets/images/' | append: item.logo | relative_url }}"
+            alt="{{ item.title }} logo" />
           {% endif %}
           {{ item.title }}
         </span>
@@ -50,14 +57,8 @@
   <ul class="list-inline software-past mb-0">
     {% for item in software %}{% if item.status == "past" %}
     <li class="list-inline-item">
-      <a
-        href="{{ item.url }}"
-        target="_blank"
-        rel="noopener"
-        class="badge resume-skill-badge"
-        title="{{ item.description | strip_newlines }}"
-        >{{ item.title }}</a
-      >
+      <a href="{{ item.url }}" target="_blank" rel="noopener" class="badge resume-skill-badge"
+        title="{{ item.description | strip_newlines }}">{{ item.title }}</a>
     </li>
     {% endif %}{% endfor %}
   </ul>
