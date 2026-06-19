@@ -59,6 +59,10 @@
 
 - title: "Artifact Evaluation Committee"
   events:
+    - title: ACM SIGPLAN International Conference on Functional Programming
+      acronym: ICFP2026
+      year: 2026
+      url: https://icfp26.sigplan.org/
     - title: 53rd ACM SIGPLAN Symposium on Principles of Programming Languages
       acronym: POPL2026
       year: 2026
