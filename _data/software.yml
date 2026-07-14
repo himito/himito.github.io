@@ -45,7 +45,7 @@
     Model-based testing tool that derives observable test paths from a Petri net model via its SOG (a compact abstraction of the state space).
 
 - title: Solidity2CPN
-  url: https://soliditycpn.lipn.univ-paris13.fr/
+  url: https://sites.lipn.univ-paris13.fr/websites/solidity2cpn/
   status: current
   logo: Solidity2CPN.svg
   stack: [Docker, TypeScript, C++]
