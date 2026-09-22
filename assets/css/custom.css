@@ -132,6 +132,17 @@ hr {
   outline-offset: 2px;
 }
 
+/* Quick links: pill menu at the bottom of the page, fed by _data/links.json */
+.bottom-bar {
+  margin-top: -1.5rem; /* the card above already has a 3rem bottom margin */
+  padding-bottom: 2rem;
+}
+
+.light-mode .quick-links a img {
+  width: 22px;
+  height: 22px;
+}
+
 /* ----------------------- Header (hero banner) ------------------------ */
 .light-mode .resume-header {
   /* State-space graph + software-development trace over navy. */

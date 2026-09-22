@@ -1,0 +1,17 @@
+{% if site.data.links and site.data.links.size > 0 %}
+<nav class="bottom-bar text-center" aria-label="Quick links">
+  <div class="top-bar-inner">
+    <ul class="social-list quick-links list-inline mx-auto">
+      {% for item in site.data.links %}
+      <li class="list-inline-item">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}">
+          {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" aria-hidden="true">{% elsif item.icon %}<i class="{{ item.icon }}" aria-hidden="true"></i>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!--//quick-links-->
+  </div>
+</nav>
+<!--//bottom-bar-->
+{% endif %}
