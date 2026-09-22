@@ -3,5 +3,15 @@
     "name": "Hangeul Gym",
     "url": "https://lipn.univ-paris13.fr/~arias/apps/hangeul-gym/",
     "image": "assets/images/hangeul-gym.svg"
+  },
+  {
+    "name": "Automata Drawer",
+    "url": "https://lipn.univ-paris13.fr/~arias/apps/automata-drawer/",
+    "image": "assets/images/automata-drawer.svg"
+  },
+  {
+    "name": "Licence Picker",
+    "url": "https://lipn.univ-paris13.fr/~arias/apps/licences/",
+    "image": "assets/images/licences.svg"
   }
 ]

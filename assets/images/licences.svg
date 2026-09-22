@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Licence Picker icon: a licence document with an approval badge, in the app's paper/ink/green palette -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#FAF7F1" stroke="#D8CFBD" stroke-width="4"/>
+  <path d="M15 12H35L44 21V50A2 2 0 0 1 42 52H17A2 2 0 0 1 15 50Z" fill="#fff" stroke="#23201B" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M35 12V21H44" fill="none" stroke="#23201B" stroke-width="4.5" stroke-linejoin="round"/>
+  <g stroke="#23201B" stroke-width="4" stroke-linecap="round">
+    <path d="M21.5 28H35"/>
+    <path d="M21.5 36H29"/>
+  </g>
+  <circle cx="44" cy="44" r="12" fill="#3FA86B" stroke="#FAF7F1" stroke-width="3.5"/>
+  <path d="M38.5 44.5l3.8 3.8 7.2-7.6" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
