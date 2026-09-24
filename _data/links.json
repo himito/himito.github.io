@@ -13,5 +13,10 @@
     "name": "Licence Picker",
     "url": "https://lipn.univ-paris13.fr/~arias/apps/licences/",
     "image": "assets/images/licences.svg"
+  },
+  {
+    "name": "Roulette",
+    "url": "https://lipn.univ-paris13.fr/~arias/apps/roulette/",
+    "image": "assets/images/roulette.svg"
   }
 ]
