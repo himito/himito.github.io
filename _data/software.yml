@@ -17,8 +17,9 @@
 - title: Imitator
   url: https://www.imitator.fr/
   status: current
+  award: Docker-Sponsored OSS
   logo: imitator.png
-  stack: [OCaml]
+  stack: [OCaml, Docker]
   description: |
     Parametric timed model checker that synthesizes the timing-parameter valuations for which a real-time system satisfies its correctness specification.
 
