@@ -449,6 +449,13 @@ hr {
   font-size: 0.95rem;
   line-height: 1;
 }
+/* Devicon's Python font icon is single-colour: split it into the logo's blue and yellow */
+.software-card-tech-icon.devicon-python-plain::before {
+  background: linear-gradient(135deg, #3776ab 50%, #ffd43b 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .software-past { margin-top: 0.25rem; }
 

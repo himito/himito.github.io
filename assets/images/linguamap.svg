@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- LinguaMap favicon: folded map + pin with a sound wave (simplified for
+       16 px). Plum on light browser chrome, cream on dark. -->
+  <style>
+    .panel { fill: #1B1426; }
+    .fold { fill: #564572; }
+    .pin { fill: #B8335C; stroke: #FFFFFF; }
+    .bars { stroke: #FFFFFF; }
+    @media (prefers-color-scheme: dark) {
+    .panel { fill: #F3EEF7; }
+    .fold { fill: #B9AEC6; }
+    .pin { fill: #E0567A; stroke: #2E2340; }
+    .bars { stroke: #FBE3A1; }
+    }
+  </style>
+  <path class="panel" d="M2 22 21 15V57L2 64Z"/>
+  <path class="fold" d="M21 15 43 22V64L21 57Z"/>
+  <path class="panel" d="M43 22 62 15V57L43 64Z"/>
+  <path class="pin" stroke-width="3" d="M32 0C23 0 16 7 16 15.8 16 27 32 41 32 41s16-14 16-25.2C48 7 41 0 32 0z"/>
+  <g class="bars" stroke-linecap="round" stroke-width="5">
+    <line x1="27" y1="11" x2="27" y2="21"/>
+    <line x1="37" y1="11" x2="37" y2="21"/>
+  </g>
+</svg>

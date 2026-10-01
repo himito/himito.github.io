@@ -6,6 +6,14 @@
   description: |
     Morphological lexical resource for French that automatically generates and identifies every inflected form of a word for Natural Language Processing tasks.
 
+- title: LinguaMap
+  url: https://linguamap.lipn.univ-paris13.fr/
+  status: current
+  logo: linguamap.svg
+  stack: [TypeScript, Python, Docker]
+  description: |
+    Participatory sound map of the world's languages, collecting transcribed and translated speaker recordings to preserve linguistic diversity for research.
+
 - title: CosyVerif
   url: https://www.cosyverif.org/
   status: current
