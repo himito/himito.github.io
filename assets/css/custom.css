@@ -56,7 +56,7 @@ hr {
 
 /* ---------------------------- Wrapper -------------------------------- */
 @media (min-width: 992px) {
-  .resume-wrapper { max-width: 1040px; }
+  .resume-wrapper { max-width: 1080px; }
 }
 
 .light-mode .resume-wrapper {
