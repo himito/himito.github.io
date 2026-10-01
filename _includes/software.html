@@ -20,15 +20,15 @@
   <h4 class="resume-subheading">Actively maintaining</h4>
   <div class="software-grid">
     {% for item in software %}{% if item.status == "current" %}
-    <a class="software-card" href="{{ item.url }}" target="_blank" rel="noopener">
+    <div class="software-card">
       <div class="software-card-head">
-        <span class="software-card-title">
+        <a class="software-card-title stretched-link" href="{{ item.url }}" target="_blank" rel="noopener">
           {% if item.logo %}
           <img class="software-card-logo" src="{{ 'assets/images/' | append: item.logo | relative_url }}"
             alt="{{ item.title }} logo" />
           {% endif %}
           {{ item.title }}
-        </span>
+        </a>
         <i class="bi bi-box-arrow-up-right software-card-link"></i>
       </div>
       <p class="software-card-desc">{{ item.description | strip_newlines }}</p>
@@ -44,12 +44,16 @@
       </ul>
       {% endif %}
       {% if item.award %}
+      {% if item.award_url %}
+      <a class="software-card-award software-card-award-link" href="{{ item.award_url }}" target="_blank" rel="noopener">
+      {% else %}
       <span class="software-card-award">
+      {% endif %}
         <i class="bi bi-award-fill software-card-award-icon"></i>
         {{ item.award }}
-      </span>
+      {% if item.award_url %}</a>{% else %}</span>{% endif %}
       {% endif %}
-    </a>
+    </div>
     {% endif %}{% endfor %}
   </div>
 

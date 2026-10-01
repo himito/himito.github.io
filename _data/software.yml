@@ -10,6 +10,8 @@
   url: https://linguamap.lipn.univ-paris13.fr/
   status: current
   logo: linguamap.svg
+  award: Fête de la Science 2026
+  award_url: https://www.fetedelascience.fr/jeux-et-ateliers-autour-de-la-linguistique-et-des-langues-du-monde
   stack: [TypeScript, Python, Docker]
   description: |
     Participatory sound map of the world's languages, collecting transcribed and translated speaker recordings to preserve linguistic diversity for research.

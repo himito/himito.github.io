@@ -361,6 +361,7 @@ hr {
   padding: 0.9rem 1rem;
   text-decoration: none;
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  position: relative; /* anchor for the title's stretched link */
 }
 .light-mode .software-card:hover {
   border-color: var(--accent);
@@ -383,6 +384,7 @@ hr {
   font-weight: 700;
   font-size: 0.98rem;
 }
+.light-mode .software-card-title:hover { color: var(--ink); text-decoration: none; }
 .software-card-logo {
   height: 1.4rem;
   width: auto;
@@ -420,6 +422,18 @@ hr {
   white-space: nowrap;
   max-width: 100%;
 }
+/* award badge with a link: sits above the card's stretched link */
+.light-mode .software-card-award-link {
+  position: relative; /* sits above the stretched link so it stays clickable */
+  z-index: 2;
+  text-decoration: none;
+}
+.light-mode .software-card-award-link:hover {
+  border-color: #d69e2e;
+  color: #9a6b00;
+  text-decoration: underline;
+}
+
 .software-card-award-icon {
   color: #d69e2e;
   font-size: 0.82rem;
