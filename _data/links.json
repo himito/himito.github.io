@@ -18,5 +18,10 @@
     "name": "Roulette",
     "url": "https://lipn.univ-paris13.fr/~arias/apps/roulette/",
     "image": "assets/images/roulette.svg"
+  },
+  {
+    "name": "Publication Stats",
+    "url": "https://lipn.univ-paris13.fr/~arias/apps/publi-stats/",
+    "image": "assets/images/publi-stats.svg"
   }
 ]
