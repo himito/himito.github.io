@@ -23,5 +23,10 @@
     "name": "Publication Stats",
     "url": "https://lipn.univ-paris13.fr/~arias/apps/publi-stats/",
     "image": "assets/images/publi-stats.svg"
+  },
+  {
+    "name": "Software Stats",
+    "url": "https://lipn.univ-paris13.fr/~arias/apps/sw-stats/evaluate",
+    "image": "assets/images/sw-stats.svg"
   }
 ]
