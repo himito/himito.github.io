@@ -11,6 +11,7 @@
   status: current
   logo: linguamap.svg
   award: Fête de la Science 2026
+  award_icon: bi-calendar-check-fill
   award_url: https://www.fetedelascience.fr/jeux-et-ateliers-autour-de-la-linguistique-et-des-langues-du-monde
   stack: [TypeScript, Python, Docker]
   description: |

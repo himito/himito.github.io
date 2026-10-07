@@ -49,7 +49,7 @@
       {% else %}
       <span class="software-card-award">
       {% endif %}
-        <i class="bi bi-award-fill software-card-award-icon"></i>
+        <i class="bi {{ item.award_icon | default: 'bi-award-fill' }} software-card-award-icon"></i>
         {{ item.award }}
       {% if item.award_url %}</a>{% else %}</span>{% endif %}
       {% endif %}
