@@ -1,9 +1,9 @@
-<!doctype html>
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found</title>
   <script>
     // GitHub Pages has no per-folder rewrites (.htaccess is ignored), so deep
     // links into a single-page app (e.g. /apps/sw-stats/evaluate) land here.
@@ -15,19 +15,289 @@
       try {
         sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash);
       } catch (e) {}
+      document.documentElement.style.visibility = 'hidden';
       location.replace(m[0]);
     })();
   </script>
+
+  <title>Page not found | {{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
   <style>
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, sans-serif; background: #fff; color: #222; }
-    a { color: #2b6cb0; }
-    @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } a { color: #90cdf4; } }
+    :root {
+      --ink: #16213a;
+      --body: #3c4658;
+      --muted: #6c7689;
+      --accent: #2f5fd0;
+      --accent-strong: #234aa8;
+      --accent-soft: #eef3fd;
+      --surface: #ffffff;
+      --page: #e9edf4;
+      --border: #e4e9f1;
+      --navy-1: #1b2a4a;
+      --navy-2: #2c4374;
+      --amber: #ffc24b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 16px;
+      background: linear-gradient(180deg, #e6ebf4 0%, var(--page) 420px, var(--page) 100%);
+      color: var(--body);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: var(--surface);
+      border: 1px solid rgba(22, 33, 58, 0.06);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 18px 50px -22px rgba(22, 33, 58, 0.30),
+                  0 4px 14px -8px rgba(22, 33, 58, 0.12);
+    }
+
+    /* Same navy + state-space graph treatment as the resume header */
+    .hero {
+      position: relative;
+      padding: 2rem 1.5rem 1.5rem;
+      background:
+        linear-gradient(180deg, rgba(9, 16, 31, 0.30) 0%, rgba(9, 16, 31, 0.72) 100%),
+        radial-gradient(circle at 78% 35%, rgba(47, 95, 208, 0.38) 0%, rgba(47, 95, 208, 0) 40%),
+        url("{{ '/assets/images/dev-graph.svg' | relative_url }}") center / cover no-repeat,
+        linear-gradient(135deg, #111a31 0%, var(--navy-1) 42%, var(--navy-2) 100%);
+      color: #fff;
+    }
+
+    .automaton { display: block; width: 100%; height: auto; }
+    .automaton .edge { stroke: rgba(255, 255, 255, 0.55); stroke-width: 1.6; fill: none; }
+    .automaton .state { fill: rgba(17, 26, 49, 0.85); stroke: #9fc0ff; stroke-width: 1.8; }
+    .automaton .label { fill: #dbe6ff; font: 500 13px "JetBrains Mono", ui-monospace, monospace; text-anchor: middle; dominant-baseline: central; }
+    .automaton .lost { fill: rgba(255, 194, 75, 0.08); stroke: var(--amber); stroke-width: 1.8; stroke-dasharray: 5 4; }
+    .automaton .lost-label { fill: var(--amber); font-weight: 700; font-size: 15px; }
+    .automaton .ghost { stroke: rgba(255, 194, 75, 0.55); stroke-width: 1.4; stroke-dasharray: 3 5; fill: none; }
+    .automaton .cross { stroke: var(--amber); stroke-width: 2; stroke-linecap: round; }
+    .automaton .token { fill: #fff; }
+
+    .pulse { animation: pulse 2.6s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+
+    .verdict {
+      margin: 1.1rem 0 0;
+      font: 400 0.82rem/1.5 "JetBrains Mono", ui-monospace, monospace;
+      color: rgba(255, 255, 255, 0.78);
+      overflow-wrap: anywhere;
+    }
+    .verdict .kw { color: #9fc0ff; }
+    .verdict .false { color: var(--amber); font-weight: 500; }
+
+    .content { padding: 1.75rem 1.5rem 1.5rem; }
+
+    .eyebrow {
+      margin: 0 0 0.35rem;
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 0.6rem;
+      color: var(--ink);
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+    .lead { margin: 0 0 1.4rem; font-size: 0.95rem; line-height: 1.6; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+    .btn-ghost { background: transparent; color: var(--accent); border: 1px solid var(--border); font-family: inherit; }
+    .btn-ghost:hover { background: var(--accent-soft); border-color: #cfdcf7; }
+    .btn[hidden] { display: none; }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    .apps { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+    .apps h2 {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .apps ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 0.5rem;
+    }
+    .apps a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 0.45rem;
+      color: var(--ink);
+      font-size: 0.86rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .apps a:hover { border-color: #cfdcf7; background: var(--accent-soft); }
+    .apps img { width: 22px; height: 22px; flex: 0 0 auto; }
+    .apps i { color: var(--accent); font-size: 1.1rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .token-anim { animation: none; }
+      .token { display: none; }
+    }
   </style>
 </head>
+
 <body>
-  <main>
-    <h1>Page not found</h1>
-    <p><a href="/">Back to the homepage</a></p>
+  <main class="card">
+    <div class="hero">
+      <!-- An automaton where the requested page is a state with no incoming transition -->
+      <svg class="automaton" viewBox="0 0 520 140" role="img"
+           aria-label="Automaton diagram: states q0, q1 and q2 are connected, while state 404 has no incoming transition.">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 0L10 5L0 10z" fill="rgba(255,255,255,0.7)"/>
+          </marker>
+        </defs>
+
+        <!-- initial arrow -->
+        <path class="edge" d="M8 70H40" marker-end="url(#arrow)"/>
+
+        <!-- transitions -->
+        <path id="e01" class="edge" d="M84 70H150" marker-end="url(#arrow)"/>
+        <path id="e12" class="edge" d="M194 70H260" marker-end="url(#arrow)"/>
+        <path class="edge" d="M150 52C140 14 98 14 88 52" marker-end="url(#arrow)"/>
+        <path class="edge" d="M300 88C320 126 214 126 186 88" marker-end="url(#arrow)"/>
+
+        <!-- attempted transition that never reaches the 404 state -->
+        <path class="ghost" d="M304 70H372"/>
+        <g class="cross" transform="translate(388 70)">
+          <path d="M-6 -6L6 6M6 -6L-6 6"/>
+        </g>
+
+        <!-- states -->
+        <circle class="state" cx="62" cy="70" r="22"/>
+        <text class="label" x="62" y="70">q0</text>
+
+        <circle class="state" cx="172" cy="70" r="22"/>
+        <text class="label" x="172" y="70">q1</text>
+
+        <circle class="state" cx="282" cy="70" r="22"/>
+        <circle class="state" cx="282" cy="70" r="17" style="fill: none"/>
+        <text class="label" x="282" y="70">q2</text>
+
+        <g class="pulse">
+          <circle class="lost" cx="452" cy="70" r="34"/>
+          <text class="label lost-label" x="452" y="70">404</text>
+        </g>
+
+        <!-- a token exploring the reachable states -->
+        <circle class="token" r="3.5">
+          <animateMotion class="token-anim" dur="3.2s" repeatCount="indefinite">
+            <mpath href="#e01"/>
+          </animateMotion>
+        </circle>
+        <circle class="token" r="3.5">
+          <animateMotion class="token-anim" dur="3.2s" begin="1.6s" repeatCount="indefinite">
+            <mpath href="#e12"/>
+          </animateMotion>
+        </circle>
+      </svg>
+
+      <p class="verdict">
+        <span class="kw">reach</span>(<span id="requested-path">this page</span>) = <span class="false">false</span>
+      </p>
+    </div>
+
+    <div class="content">
+      <p class="eyebrow">Error 404</p>
+      <h1>Unreachable state</h1>
+      <p class="lead">
+        I explored the whole state space and this page isn't in it. It may have moved,
+        or the link may contain a typo.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ '/' | relative_url }}">
+          <i class="bi bi-house-door" aria-hidden="true"></i> Back to the homepage
+        </a>
+        <button class="btn btn-ghost" type="button" id="go-back" hidden>
+          <i class="bi bi-arrow-left" aria-hidden="true"></i> Previous page
+        </button>
+      </div>
+
+      {% if site.data.links and site.data.links.size > 0 %}
+      <nav class="apps" aria-label="Apps">
+        <h2>Reachable states</h2>
+        <ul>
+          {% for item in site.data.links %}
+          <li>
+            <a href="{{ item.url | relative_url }}">
+              {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" aria-hidden="true">{% elsif item.icon %}<i class="{{ item.icon }}" aria-hidden="true"></i>{% endif %}
+              {{ item.name }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+    </div>
   </main>
+
+  <script>
+    (function () {
+      var path = decodeURI(location.pathname);
+      if (path && path !== '/404.html') {
+        document.getElementById('requested-path').textContent = '"' + path + '"';
+      }
+      // Only offer "Previous page" when there is one on this site
+      if (document.referrer && document.referrer.indexOf(location.origin) === 0 && history.length > 1) {
+        var back = document.getElementById('go-back');
+        back.hidden = false;
+        back.addEventListener('click', function () { history.back(); });
+      }
+    })();
+  </script>
 </body>
 </html>
