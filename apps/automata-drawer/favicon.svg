@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon: the logo without the initial arrow, with heavier strokes and a solid inner dot,
+       so it stays readable at 16px -->
+  <rect width="64" height="64" rx="13" fill="#2f55d4"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round">
+    <circle cx="16.5" cy="46.5" r="9" stroke-width="5.5"/>
+    <path d="M18 36C18 26 20 20 24.5 20" stroke-width="5.5"/>
+    <circle cx="47" cy="21" r="11.5" stroke-width="5"/>
+  </g>
+  <circle cx="47" cy="21" r="5" fill="#fff"/>
+  <path d="M31 20l-8.5-6.3v12.6z" fill="#fff"/>
+</svg>

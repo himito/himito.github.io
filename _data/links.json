@@ -1,32 +1,32 @@
 [
   {
     "name": "Hangeul Gym",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/hangeul-gym/",
+    "url": "/apps/hangeul-gym/",
     "image": "assets/images/hangeul-gym.svg"
   },
   {
     "name": "Automata Drawer",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/automata-drawer/",
+    "url": "/apps/automata-drawer/",
     "image": "assets/images/automata-drawer.svg"
   },
   {
     "name": "Licence Picker",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/licences/",
+    "url": "/apps/licences/",
     "image": "assets/images/licences.svg"
   },
   {
     "name": "Roulette",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/roulette/",
+    "url": "/apps/roulette/",
     "image": "assets/images/roulette.svg"
   },
   {
     "name": "Publication Stats",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/publi-stats/",
+    "url": "/apps/publi-stats/",
     "image": "assets/images/publi-stats.svg"
   },
   {
     "name": "Software Stats",
-    "url": "https://lipn.univ-paris13.fr/~arias/apps/sw-stats/evaluate",
+    "url": "/apps/sw-stats/evaluate",
     "image": "assets/images/sw-stats.svg"
   }
 ]

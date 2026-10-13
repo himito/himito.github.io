@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Hangeul Gym</title>
+  <!-- Manuscript cell (원고지) with dashed centre guides -->
+  <rect x="3.25" y="3.25" width="57.5" height="57.5" rx="6" fill="#ffffff" stroke="#7d95c0" stroke-width="2.5"/>
+  <path d="M32 6.5V57.5M6.5 32H57.5" fill="none" stroke="#cbd5e6" stroke-width="1.2" stroke-dasharray="2.4 2.4"/>
+  <!-- ㅎ: tick and bar in trigram black, the circle as a red and blue taegeuk ring -->
+  <g fill="none" stroke-width="5">
+    <path d="M32 11.5V17.5" stroke="#15171c" stroke-linecap="round"/>
+    <path d="M17.5 24H46.5" stroke="#15171c" stroke-linecap="round"/>
+    <path d="M22 41A10 10 0 0 1 42 41" stroke="#cd2e3a"/>
+    <path d="M42 41A10 10 0 0 1 22 41" stroke="#0047a0"/>
+  </g>
+</svg>

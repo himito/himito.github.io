@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Block the folder itself (e.g. example.com/X/)
+RewriteRule ^$ - [F]
+
+# Block files sitting directly in X (e.g. example.com/X/file.html),
+# but let subfolders through (e.g. example.com/X/sub/...)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^[^/]+$ - [F]

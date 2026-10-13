@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Automata Drawer</title>
+  <!-- A start state with its initial arrow, a transition, and an accepting (double-circle) state -->
+  <rect width="64" height="64" rx="15" fill="#2f55d4"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round">
+    <path d="M4 45h4.5" stroke-width="4"/>
+    <circle cx="19" cy="45" r="8.5" stroke-width="4"/>
+    <path d="M20.5 36.5C20.5 27 22 21 27 21" stroke-width="4"/>
+    <circle cx="46.5" cy="21" r="11.5" stroke-width="3.6"/>
+    <circle cx="46.5" cy="21" r="5.2" stroke-width="3.2"/>
+  </g>
+  <path d="M32 21l-8-5.6v11.2z" fill="#fff"/>
+</svg>

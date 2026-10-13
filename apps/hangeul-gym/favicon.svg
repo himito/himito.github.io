@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon: the logo without guides and with heavier strokes, so it stays readable at 16px -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#ffffff" stroke="#7d95c0" stroke-width="4"/>
+  <g fill="none" stroke-width="6.5">
+    <path d="M32 10.5V17" stroke="#15171c" stroke-linecap="round"/>
+    <path d="M15.5 24H48.5" stroke="#15171c" stroke-linecap="round"/>
+    <path d="M21 41.5A11 11 0 0 1 43 41.5" stroke="#cd2e3a"/>
+    <path d="M43 41.5A11 11 0 0 1 21 41.5" stroke="#0047a0"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>(function(){try{var p=sessionStorage.getItem("spa-redirect");sessionStorage.removeItem("spa-redirect");if(p&&p.indexOf(location.pathname)===0)history.replaceState(null,"",p)}catch(e){}})()</script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/apps/sw-stats/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/apps/sw-stats/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apps/sw-stats/apple-touch-icon.png">
+    <meta name="theme-color" content="#eef1f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0d121b" media="(prefers-color-scheme: dark)">
+    <script>
+      // Apply the saved theme before the first paint, so a dark choice never flashes light.
+      try {
+        const theme = localStorage.getItem('sw-stats:theme')
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme
+      } catch {}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Dev Stats</title>
+    <script type="module" crossorigin src="/apps/sw-stats/assets/index-BA7LxJVt.js"></script>
+    <link rel="modulepreload" crossorigin href="/apps/sw-stats/assets/aggregate-BoSeT91H.js">
+    <link rel="stylesheet" crossorigin href="/apps/sw-stats/assets/index-DaSKvj9d.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

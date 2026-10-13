@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<style>
+.c{fill:#86b6ef}.b{fill:#5598e7}.a{fill:#256abf}.astar{fill:#104281}
+@media (prefers-color-scheme:dark){.c{fill:#9ec5f4}.b{fill:#6da7ec}.a{fill:#3987e5}.astar{fill:#256abf}}
+</style>
+<path class="c" d="M0.00 32V19.89Q0.00 18.29 1.60 18.29H4.80Q6.40 18.29 6.40 19.89V32Z"/>
+<path class="b" d="M8.53 32V10.74Q8.53 9.14 10.13 9.14H13.33Q14.93 9.14 14.93 10.74V32Z"/>
+<path class="a" d="M17.07 32V15.31Q17.07 13.71 18.67 13.71H21.87Q23.47 13.71 23.47 15.31V32Z"/>
+<path class="astar" d="M25.60 32V1.60Q25.60 0.00 27.20 0.00H30.40Q32.00 0.00 32.00 1.60V32Z"/>
+</svg>

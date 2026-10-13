@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found</title>
+  <script>
+    // GitHub Pages has no per-folder rewrites (.htaccess is ignored), so deep
+    // links into a single-page app (e.g. /apps/sw-stats/evaluate) land here.
+    // Remember the requested path and send the browser to the app's index.html,
+    // which restores the path before its router starts.
+    (function () {
+      var m = location.pathname.match(/^\/apps\/[^/]+\//);
+      if (!m) return;
+      try {
+        sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash);
+      } catch (e) {}
+      location.replace(m[0]);
+    })();
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, sans-serif; background: #fff; color: #222; }
+    a { color: #2b6cb0; }
+    @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } a { color: #90cdf4; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p><a href="/">Back to the homepage</a></p>
+  </main>
+</body>
+</html>
