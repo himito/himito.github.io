@@ -29,6 +29,8 @@ permalink: /404.html
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{{ '/assets/academicons/css/academicons.min.css' | relative_url }}">
+  <script defer src="{{ '/assets/fontawesome/js/all.js' | relative_url }}"></script>
 
   <style>
     :root {
@@ -52,8 +54,10 @@ permalink: /404.html
       margin: 0;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 1.25rem;
       padding: 2rem 16px;
       background: linear-gradient(180deg, #e6ebf4 0%, var(--page) 420px, var(--page) 100%);
       color: var(--body);
@@ -70,6 +74,52 @@ permalink: /404.html
       overflow: hidden;
       box-shadow: 0 18px 50px -22px rgba(22, 33, 58, 0.30),
                   0 4px 14px -8px rgba(22, 33, 58, 0.12);
+    }
+
+    /* Social links and quick links: same frosted pills as the resume's top and bottom bars */
+    .pill-bar {
+      display: inline-flex;
+      max-width: 100%;
+      padding: 0.35rem;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(228, 233, 241, 0.86);
+      border-radius: 999px;
+      box-shadow: 0 10px 30px -22px rgba(22, 33, 58, 0.45);
+      backdrop-filter: blur(10px);
+    }
+    .pill-bar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+    .pill-bar a {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--navy-2);
+      font-size: 1.15rem;
+      text-decoration: none;
+      transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+    .pill-bar img { width: 22px; height: 22px; }
+    .pill-bar a:hover,
+    .pill-bar a:focus-visible {
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-color: rgba(47, 95, 208, 0.22);
+      transform: translateY(-1px);
+    }
+    .pill-bar a:focus-visible {
+      outline: 3px solid rgba(47, 95, 208, 0.24);
+      outline-offset: 2px;
     }
 
     /* Same navy + state-space graph treatment as the resume header */
@@ -148,39 +198,6 @@ permalink: /404.html
     .btn[hidden] { display: none; }
     .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-    .apps { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
-    .apps h2 {
-      margin: 0 0 0.75rem;
-      color: var(--muted);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-    .apps ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-      gap: 0.5rem;
-    }
-    .apps a {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.55rem 0.7rem;
-      border: 1px solid var(--border);
-      border-radius: 0.45rem;
-      color: var(--ink);
-      font-size: 0.86rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: border-color 0.15s ease, background 0.15s ease;
-    }
-    .apps a:hover { border-color: #cfdcf7; background: var(--accent-soft); }
-    .apps img { width: 22px; height: 22px; flex: 0 0 auto; }
-    .apps i { color: var(--accent); font-size: 1.1rem; }
 
     @media (prefers-reduced-motion: reduce) {
       .pulse, .token-anim { animation: none; }
@@ -190,6 +207,20 @@ permalink: /404.html
 </head>
 
 <body>
+  {% if site.data.social and site.data.social.size > 0 %}
+  <nav class="pill-bar" aria-label="External profiles">
+    <ul>
+      {% for item in site.data.social %}
+      <li>
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}">
+          <i class="{{ item.icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
   <main class="card">
     <div class="hero">
       <!-- An automaton where the requested page is a state with no incoming transition -->
@@ -266,24 +297,22 @@ permalink: /404.html
           <i class="bi bi-arrow-left" aria-hidden="true"></i> Previous page
         </button>
       </div>
-
-      {% if site.data.links and site.data.links.size > 0 %}
-      <nav class="apps" aria-label="Apps">
-        <h2>Reachable states</h2>
-        <ul>
-          {% for item in site.data.links %}
-          <li>
-            <a href="{{ item.url | relative_url }}">
-              {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" aria-hidden="true">{% elsif item.icon %}<i class="{{ item.icon }}" aria-hidden="true"></i>{% endif %}
-              {{ item.name }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-      {% endif %}
     </div>
   </main>
+
+  {% if site.data.links and site.data.links.size > 0 %}
+  <nav class="pill-bar" aria-label="Quick links">
+    <ul>
+      {% for item in site.data.links %}
+      <li>
+        <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}">
+          {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" aria-hidden="true">{% elsif item.icon %}<i class="{{ item.icon }}" aria-hidden="true"></i>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
 
   <script>
     (function () {
