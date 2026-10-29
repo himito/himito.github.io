@@ -696,3 +696,144 @@ hr {
 .light-mode .footer { color: var(--muted); }
 .light-mode .footer .copyright a { color: var(--muted); }
 .light-mode .footer .copyright a:hover { color: var(--accent); }
+
+/* ------------------------- Section menu ------------------------------ */
+/* Floating navigation (see _includes/sectionnav.html). A vertical rail on
+   wide screens, a floating button with a pop-up list on smaller ones. */
+html { scroll-behavior: smooth; }
+.resume-section, #top { scroll-margin-top: 1.5rem; }
+
+.section-nav {
+  position: fixed;
+  z-index: 1030;
+  right: 1.25rem;
+  bottom: 1.25rem;
+}
+
+.section-nav-list {
+  margin: 0;
+  padding: 0.35rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(228, 233, 241, 0.86);
+  box-shadow: 0 14px 34px -18px rgba(22, 33, 58, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+.light-mode .section-nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--navy-2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.section-nav-list .bi {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 999px;
+}
+.light-mode .section-nav-list a:hover,
+.light-mode .section-nav-list a:focus-visible {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.light-mode .section-nav-list a:focus-visible {
+  outline: 3px solid rgba(47, 95, 208, 0.24);
+  outline-offset: 1px;
+}
+.light-mode .section-nav-list a.is-active { color: var(--accent-strong); }
+.light-mode .section-nav-list a.is-active .bi {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  box-shadow: 0 6px 14px -6px rgba(47, 95, 208, 0.55);
+}
+.section-nav-top { border-top: 1px solid var(--border); margin-top: 0.3rem; padding-top: 0.3rem; }
+
+.section-nav-toggle {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 1.35rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  box-shadow: 0 10px 24px -10px rgba(47, 95, 208, 0.7);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-nav-toggle:focus-visible { outline: 3px solid rgba(47, 95, 208, 0.35); outline-offset: 2px; }
+
+/* Small and medium screens: button + pop-up card */
+@media (max-width: 1239.98px) {
+  .section-nav-list {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 0.6rem);
+    min-width: 220px;
+    border-radius: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  }
+  .light-mode .section-nav-list a { padding-right: 0.9rem; }
+  .section-nav.is-open .section-nav-list {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+/* Wide screens: always-visible vertical rail, labels shown on hover */
+@media (min-width: 1240px) {
+  .section-nav {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .section-nav-toggle { display: none; }
+  .section-nav-list {
+    border-radius: 999px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .light-mode .section-nav-list a { position: relative; gap: 0; }
+  .section-nav-label {
+    position: absolute;
+    right: calc(100% + 0.75rem);
+    top: 50%;
+    transform: translate(6px, -50%);
+    white-space: nowrap;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    color: #ffffff;
+    background: var(--navy-1);
+    font-size: 0.78rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .section-nav-list a:hover .section-nav-label,
+  .section-nav-list a:focus-visible .section-nav-label {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  .light-mode .section-nav-list a:hover,
+  .light-mode .section-nav-list a:focus-visible { background: transparent; }
+  .light-mode .section-nav-list a:not(.is-active):hover .bi,
+  .light-mode .section-nav-list a:not(.is-active):focus-visible .bi { background: var(--accent-soft); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

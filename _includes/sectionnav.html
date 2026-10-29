@@ -1,0 +1,80 @@
+{% assign sections = "about:bi-person:About Me|software:bi-code-square:Software|projects:bi-code-slash:Projects|publications:bi-file-text:Publications|responsibilities:bi-list-task:Responsibilities|service:bi-people:Service" | split: "|" %}
+<nav class="section-nav" aria-label="Page sections">
+  <button class="section-nav-toggle" type="button" aria-expanded="false" aria-controls="section-nav-list" aria-label="Show sections">
+    <i class="bi bi-list" aria-hidden="true"></i>
+  </button>
+  <ul id="section-nav-list" class="section-nav-list list-unstyled">
+    {% for entry in sections %}
+    {% assign parts = entry | split: ":" %}
+    <li>
+      <a href="#{{ parts[0] }}" data-section="{{ parts[0] }}">
+        <i class="bi {{ parts[1] }}" aria-hidden="true"></i>
+        <span class="section-nav-label">{{ parts[2] }}</span>
+      </a>
+    </li>
+    {% endfor %}
+    <li class="section-nav-top">
+      <a href="#top" aria-label="Back to top">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        <span class="section-nav-label">Back to top</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!--//section-nav-->
+
+<script>
+  (function () {
+    var nav = document.querySelector(".section-nav");
+    var toggle = nav.querySelector(".section-nav-toggle");
+    var links = nav.querySelectorAll("a[data-section]");
+
+    function setOpen(open) {
+      nav.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open);
+      toggle.setAttribute("aria-label", open ? "Hide sections" : "Show sections");
+    }
+
+    toggle.addEventListener("click", function () {
+      setOpen(!nav.classList.contains("is-open"));
+    });
+    nav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () { setOpen(false); });
+    });
+    document.addEventListener("click", function (e) {
+      if (!nav.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+
+    // Highlight the section whose heading most recently crossed the upper
+    // third of the viewport. Comparing positions (rather than relying on link
+    // order) works both for the two-column desktop layout and stacked mobile.
+    function update() {
+      var current = null, currentTop = -Infinity;
+      var lowest = null, lowestTop = -Infinity;
+      var line = window.innerHeight / 3;
+      links.forEach(function (a) {
+        var section = document.getElementById(a.dataset.section);
+        if (!section) return;
+        var top = section.getBoundingClientRect().top;
+        if (top <= line && top > currentTop) { current = a; currentTop = top; }
+        if (top > lowestTop) { lowest = a; lowestTop = top; }
+      });
+      // At the very bottom, the last section may never reach the line
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        current = lowest;
+      }
+      links.forEach(function (a) {
+        a.classList.toggle("is-active", a === current);
+        if (a === current) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    }
+
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+</script>
