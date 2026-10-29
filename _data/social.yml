@@ -15,13 +15,16 @@
   icon: "ai ai-dblp"
 
 - name: "gitlab"
+  label: "GitLab"
   url: "https://depot.lipn.univ-paris13.fr/arias"
   icon: "fa-brands fa-gitlab"
 
 - name: "github"
+  label: "GitHub"
   url: "https://github.com/himito"
   icon: "fa-brands fa-github"
 
 - name: "linkedin"
+  label: "LinkedIn"
   url: "https://www.linkedin.com/in/jaimeariasalmeida"
   icon: "fa-brands fa-linkedin-in"

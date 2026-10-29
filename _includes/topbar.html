@@ -3,7 +3,7 @@
     <ul class="social-list list-inline mx-auto">
       {% for item in site.data.social%}
       <li class="list-inline-item">
-        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.label | default: item.name }}" data-tooltip="{{ item.label | default: item.name }}">
           <i class="{{ item.icon }}" aria-hidden="true"></i>
         </a>
       </li>

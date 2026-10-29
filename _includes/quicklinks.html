@@ -4,7 +4,7 @@
     <ul class="social-list quick-links list-inline mx-auto">
       {% for item in site.data.links %}
       <li class="list-inline-item">
-        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.name }}" aria-label="{{ item.name }}">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.name }}" data-tooltip="{{ item.name }}">
           {% if item.image %}<img src="{{ item.image | relative_url }}" alt="" aria-hidden="true">{% elsif item.icon %}<i class="{{ item.icon }}" aria-hidden="true"></i>{% endif %}
         </a>
       </li>
