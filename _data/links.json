@@ -28,5 +28,10 @@
     "name": "Software Stats",
     "url": "/apps/sw-stats/evaluate",
     "image": "assets/images/sw-stats.svg"
+  },
+  {
+    "name": "Discours",
+    "url": "/apps/discours/",
+    "image": "assets/images/discours.svg"
   }
 ]

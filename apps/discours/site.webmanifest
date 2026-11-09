@@ -1,0 +1,16 @@
+{
+  "name": "Discours — entraînement à la prononciation",
+  "short_name": "Discours",
+  "description": "Entraînement à la prononciation d'un discours en français : API, liaisons, lecture à voix haute.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6941EB",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
