@@ -1,1 +1,0 @@
-import{t as e}from"./espeak.worker-DV61bA7L.js";var t=/* @__PURE__ */ e(((e,t)=>{t.exports={}}));export default t();
